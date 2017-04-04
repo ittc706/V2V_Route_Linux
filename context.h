@@ -42,7 +42,12 @@ private:
 	/*
 	* 默认构造函数
 	*/
-	context();
+	context() {}
+
+	/*
+	* 读取配置文件
+	*/
+	void read_configuration();
 
 	/*
 	* 单例对象生成

@@ -5,7 +5,7 @@
 <!--地理拓扑单元选择
 	[URBAN]：城市场景
 	[HIGHSPEED]：高速场景-->	
-<gtt_mode>HIGHSPEED</gtt_mode>
+<gtt_mode>URBAN</gtt_mode>
 
 
 

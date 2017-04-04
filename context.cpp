@@ -35,25 +35,37 @@ context* context::s_singleton_context = nullptr;
 context* context::get_context() {
 	if (s_singleton_context == nullptr) {
 		context* __context = new context();
+		s_singleton_context = __context;
+		__context->read_configuration();
 		__context->singleton_initialize();
 		__context->dependcy_inject();
-		s_singleton_context = __context;
 		__context->post_processor();
 	}
 	return s_singleton_context;
 }
 
-context::context() {
+void context::read_configuration() {
+	set_config_loader(new config_loader());
 
+	set_global_control_config(new global_control_config());
+	get_global_control_config()->set_config_loader(get_config_loader());
+	get_global_control_config()->load();
+
+	set_gtt_config(gtt_config::gtt_config_bind_by_mode(get_global_control_config()->get_gtt_mode()));
+	set_rrm_config(new rrm_config());
+	set_tmc_config(new tmc_config());
+
+	get_gtt_config()->set_config_loader(get_config_loader());
+	get_rrm_config()->set_config_loader(get_config_loader());
+	get_tmc_config()->set_config_loader(get_config_loader());
+
+	get_gtt_config()->load();
+	get_rrm_config()->load();
+	get_tmc_config()->load();
 }
 
 void context::singleton_initialize() {
 	set_system_control(new system_control());
-	set_config_loader(new config_loader());
-	set_global_control_config(new global_control_config());
-	set_gtt_config(gtt_config::gtt_config_bind_by_mode(get_global_control_config()->get_gtt_mode()));
-	set_rrm_config(new rrm_config());
-	set_tmc_config(new tmc_config());
 	set_route(route::route_bind_by_mode(get_global_control_config()->get_route_mode()));
 	set_gtt(gtt::gtt_bind_by_mode(get_global_control_config()->get_gtt_mode()));
 	set_tmc(new tmc());
@@ -62,18 +74,10 @@ void context::singleton_initialize() {
 
 void context::dependcy_inject() {
 	get_system_control()->set_context(this);
-	get_global_control_config()->set_config_loader(get_config_loader());
-	get_gtt_config()->set_config_loader(get_config_loader());
-	get_rrm_config()->set_config_loader(get_config_loader());
-	get_tmc_config()->set_config_loader(get_config_loader());
 	get_gtt()->set_config(get_gtt_config());
 }
 
 void context::post_processor() {
-	get_global_control_config()->load();
-	get_gtt_config()->load();
-	get_rrm_config()->load();
-	get_tmc_config()->load();
 	get_gtt()->initialize();
 	get_route()->initialize();
 	wt::set_resource();

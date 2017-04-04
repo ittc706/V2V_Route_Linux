@@ -20,6 +20,7 @@
 #include<utility>
 #include<random>
 #include"context.h"
+#include"route.h"
 #include"config.h"
 #include"gtt_urban.h"
 #include"vue.h"
@@ -140,7 +141,7 @@ void gtt_urban::fresh_location() {
 		}
 	}
 
-
+	context::get_context()->get_route()->update_route_table_from_physics_level();
 }
 
 void gtt_urban::calculate_pl(int t_vue_id1, int t_vue_id2) {
