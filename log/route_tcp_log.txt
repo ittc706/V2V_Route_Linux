@@ -1,0 +1,1086 @@
+TTI[9  ] - trigger[57 , 177]
+TTI[9  ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[9  ] - link[57 , 154] - node[154] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[10 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[10 ] - link[57 , 154] - node[154] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[11 ] - trigger[13 , 120]
+TTI[11 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[11 ] - link[13 , 120] - node[120] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[11 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[11 ] - link[57 , 154] - node[154] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[12 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[12 ] - link[13 , 120] - node[120] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[12 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[12 ] - link[57 , 154] - node[154] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[13 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[13 ] - link[13 , 120] - node[120] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[13 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[13 ] - link[57 , 154] - node[154] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[14 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[14 ] - link[13 , 120] - node[120] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[14 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[14 ] - link[57 , 154] - node[154] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[15 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[15 ] - link[13 , 120] - node[120] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[15 ] - link[57 , 154] - {SUCCEED}
+TTI[15 ] - link[57 , 154] - node[57 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[15 ] - link[57 , 154] - node[154] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[16 ] - trigger[134, 176]
+TTI[16 ] - link[134, 176] - node[134] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[16 ] - link[134, 176] - node[176] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[16 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[16 ] - link[154, 44 ] - node[44 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[16 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[16 ] - link[13 , 120] - node[120] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[17 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[17 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[17 ] - link[134, 176] - node[134] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[17 ] - link[134, 176] - node[176] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[17 ] - link[13 , 120] - {SUCCEED}
+TTI[17 ] - link[13 , 120] - node[13 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[17 ] - link[13 , 120] - node[120] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[18 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[18 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[18 ] - link[134, 176] - node[134] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[18 ] - link[134, 176] - node[176] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[19 ] - trigger[144, 18 ]
+TTI[19 ] - link[144, 148] - node[144] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[19 ] - link[144, 148] - node[148] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[19 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[19 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[19 ] - link[134, 176] - node[134] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[19 ] - link[134, 176] - node[176] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[20 ] - link[144, 148] - node[144] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[20 ] - link[144, 148] - node[148] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[20 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[20 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[20 ] - link[134, 176] - node[134] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[20 ] - link[134, 176] - node[176] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[21 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[21 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[21 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[21 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[21 ] - link[134, 176] - node[134] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[21 ] - link[134, 176] - node[176] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[22 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[22 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[22 ] - link[154, 44 ] - {SUCCEED}
+TTI[22 ] - link[154, 44 ] - node[154] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[22 ] - link[154, 44 ] - node[44 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[22 ] - link[134, 176] - {SUCCEED}
+TTI[22 ] - link[134, 176] - node[134] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[22 ] - link[134, 176] - node[176] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[23 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[23 ] - link[44 , 11 ] - node[11 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[23 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[23 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[24 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[24 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[24 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[24 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[25 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[25 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[25 ] - link[144, 148] - {SUCCEED}
+TTI[25 ] - link[144, 148] - node[144] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[25 ] - link[144, 148] - node[148] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[26 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[26 ] - link[148, 12 ] - node[12 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[26 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[26 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[27 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[27 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[27 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[27 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[28 ] - trigger[197, 209]
+TTI[28 ] - link[197, 128] - node[197] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[28 ] - link[197, 128] - node[128] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[28 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[28 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[28 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[28 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[29 ] - link[197, 128] - node[197] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[29 ] - link[197, 128] - node[128] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[29 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[29 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[29 ] - link[44 , 11 ] - {SUCCEED}
+TTI[29 ] - link[44 , 11 ] - node[44 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[29 ] - link[44 , 11 ] - node[11 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[30 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[30 ] - link[11 , 76 ] - node[76 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[30 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[30 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[30 ] - link[197, 128] - node[197] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[30 ] - link[197, 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[31 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[31 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[31 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[31 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[31 ] - link[197, 128] - node[197] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[31 ] - link[197, 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[32 ] - trigger[165, 139]
+TTI[32 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[32 ] - link[165, 54 ] - node[54 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[32 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[32 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[32 ] - link[197, 128] - node[197] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[32 ] - link[197, 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[32 ] - link[148, 12 ] - {SUCCEED}
+TTI[32 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[32 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[33 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[33 ] - link[12 , 18 ] - node[18 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[33 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[33 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[33 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[33 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[33 ] - link[197, 128] - node[197] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[33 ] - link[197, 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[34 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[34 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[34 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[34 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[34 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[34 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[34 ] - link[197, 128] - {SUCCEED}
+TTI[34 ] - link[197, 128] - node[197] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[34 ] - link[197, 128] - node[128] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[35 ] - trigger[43 , 171]
+TTI[35 ] - trigger[133, 15 ]
+TTI[35 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[35 ] - link[43 , 49 ] - node[49 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[35 ] - link[128, 201] - node[128] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[35 ] - link[128, 201] - node[201] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[35 ] - link[133, 129] - node[133] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[35 ] - link[133, 129] - node[129] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[35 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[35 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[35 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[35 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[35 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[35 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[36 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[36 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[36 ] - link[133, 129] - node[133] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[36 ] - link[133, 129] - node[129] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[36 ] - link[128, 201] - node[128] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[36 ] - link[128, 201] - node[201] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[36 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[36 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[36 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[36 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[36 ] - link[11 , 76 ] - {SUCCEED}
+TTI[36 ] - link[11 , 76 ] - node[11 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[36 ] - link[11 , 76 ] - node[76 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[37 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[37 ] - link[76 , 177] - node[177] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[37 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[37 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[37 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[37 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[37 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[37 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[37 ] - link[133, 129] - node[133] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[37 ] - link[133, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[37 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[37 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[38 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[38 ] - link[76 , 177] - node[177] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[38 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[38 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[38 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[38 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[38 ] - link[133, 129] - node[133] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[38 ] - link[133, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[38 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[38 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[38 ] - link[165, 54 ] - {SUCCEED}
+TTI[38 ] - link[165, 54 ] - node[165] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[38 ] - link[165, 54 ] - node[54 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[39 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[39 ] - link[54 , 195] - node[195] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[39 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[39 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[39 ] - link[133, 129] - node[133] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[39 ] - link[133, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[39 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[39 ] - link[76 , 177] - node[177] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[39 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[39 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[39 ] - link[12 , 18 ] - {SUCCEED}
+TTI[39 ] - link[12 , 18 ] - node[12 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[39 ] - link[12 , 18 ] - node[18 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[40 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[40 ] - link[54 , 195] - node[195] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[40 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[40 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[40 ] - link[133, 129] - node[133] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[40 ] - link[133, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[40 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[40 ] - link[76 , 177] - node[177] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[40 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[40 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[41 ] - trigger[106, 87 ]
+TTI[41 ] - link[106, 148] - node[106] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[41 ] - link[106, 148] - node[148] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[41 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[41 ] - link[76 , 177] - node[177] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[41 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[41 ] - link[54 , 195] - node[195] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[41 ] - link[43 , 49 ] - {SUCCEED}
+TTI[41 ] - link[43 , 49 ] - node[43 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[41 ] - link[43 , 49 ] - node[49 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[41 ] - link[133, 129] - {SUCCEED}
+TTI[41 ] - link[133, 129] - node[133] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[41 ] - link[133, 129] - node[129] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[41 ] - link[128, 201] - {SUCCEED}
+TTI[41 ] - link[128, 201] - node[128] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[41 ] - link[128, 201] - node[201] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[42 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[42 ] - link[49 , 128] - node[128] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[42 ] - link[129, 156] - node[129] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[42 ] - link[129, 156] - node[156] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[42 ] - link[201, 209] - node[201] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[42 ] - link[201, 209] - node[209] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[42 ] - link[106, 148] - node[106] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[42 ] - link[106, 148] - node[148] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[42 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[42 ] - link[76 , 177] - node[177] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[42 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[42 ] - link[54 , 195] - node[195] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[43 ] - trigger[112, 207]
+TTI[43 ] - link[112, 193] - node[112] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[43 ] - link[112, 193] - node[193] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[43 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[43 ] - link[49 , 128] - node[128] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[43 ] - link[129, 156] - node[129] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[43 ] - link[129, 156] - node[156] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[43 ] - link[201, 209] - node[201] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[43 ] - link[201, 209] - node[209] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[43 ] - link[106, 148] - node[106] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[43 ] - link[106, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[43 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[43 ] - link[54 , 195] - node[195] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[43 ] - link[76 , 177] - {SUCCEED}
+TTI[43 ] - link[76 , 177] - node[76 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[43 ] - link[76 , 177] - node[177] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[44 ] - link[112, 193] - node[112] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[44 ] - link[112, 193] - node[193] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[44 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[44 ] - link[49 , 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[44 ] - link[106, 148] - node[106] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[44 ] - link[106, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[44 ] - link[129, 156] - node[129] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[44 ] - link[129, 156] - node[156] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[44 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[44 ] - link[54 , 195] - node[195] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[44 ] - link[201, 209] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[44 ] - link[201, 209] - node[209] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - trigger[33 , 110]
+TTI[45 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[45 ] - link[33 , 27 ] - node[27 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[45 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[45 ] - link[49 , 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - link[106, 148] - node[106] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[45 ] - link[106, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - link[129, 156] - node[129] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[45 ] - link[129, 156] - node[156] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - link[112, 193] - node[112] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[45 ] - link[112, 193] - node[193] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - link[201, 209] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[45 ] - link[201, 209] - node[209] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[45 ] - link[54 , 195] - {SUCCEED}
+TTI[45 ] - link[54 , 195] - node[54 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[45 ] - link[54 , 195] - node[195] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[46 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[46 ] - link[195, 39 ] - node[39 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[46 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[46 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[46 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[46 ] - link[49 , 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[46 ] - link[106, 148] - node[106] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[46 ] - link[106, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[46 ] - link[129, 156] - node[129] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[46 ] - link[129, 156] - node[156] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[46 ] - link[112, 193] - node[112] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[46 ] - link[112, 193] - node[193] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[46 ] - link[201, 209] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[46 ] - link[201, 209] - node[209] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[47 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[47 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[47 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[47 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[47 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[47 ] - link[49 , 128] - node[128] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[47 ] - link[129, 156] - node[129] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[47 ] - link[129, 156] - node[156] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[47 ] - link[112, 193] - node[112] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[47 ] - link[112, 193] - node[193] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[47 ] - link[201, 209] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[47 ] - link[201, 209] - node[209] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[47 ] - link[106, 148] - {SUCCEED}
+TTI[47 ] - link[106, 148] - node[106] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[47 ] - link[106, 148] - node[148] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[48 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[48 ] - link[148, 12 ] - node[12 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[48 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[48 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[48 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[48 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[48 ] - link[112, 193] - node[112] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[48 ] - link[112, 193] - node[193] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[48 ] - link[49 , 128] - {SUCCEED}
+TTI[48 ] - link[49 , 128] - node[49 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[48 ] - link[49 , 128] - node[128] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[48 ] - link[129, 156] - {SUCCEED}
+TTI[48 ] - link[129, 156] - node[129] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[48 ] - link[129, 156] - node[156] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[48 ] - link[201, 209] - {SUCCEED}
+TTI[48 ] - link[201, 209] - node[201] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[48 ] - link[201, 209] - node[209] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[49 ] - trigger[125, 160]
+TTI[49 ] - link[125, 160] - node[125] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[49 ] - link[125, 160] - node[160] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[49 ] - link[128, 201] - node[128] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[49 ] - link[128, 201] - node[201] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[49 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[49 ] - link[156, 86 ] - node[86 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[49 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[49 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[49 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[49 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[49 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[49 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[49 ] - link[112, 193] - {SUCCEED}
+TTI[49 ] - link[112, 193] - node[112] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[49 ] - link[112, 193] - node[193] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[50 ] - trigger[59 , 46 ]
+TTI[50 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[50 ] - link[59 , 51 ] - node[51 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[50 ] - link[193, 121] - node[193] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[50 ] - link[193, 121] - node[121] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[50 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[50 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[50 ] - link[125, 160] - node[125] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[50 ] - link[125, 160] - node[160] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[50 ] - link[128, 201] - node[128] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[50 ] - link[128, 201] - node[201] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[50 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[50 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[50 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[50 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[50 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[50 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[51 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[51 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[51 ] - link[193, 121] - node[193] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[51 ] - link[193, 121] - node[121] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[51 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[51 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[51 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[51 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[51 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[51 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[51 ] - link[125, 160] - node[125] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[51 ] - link[125, 160] - node[160] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[51 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[51 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[51 ] - link[33 , 27 ] - {SUCCEED}
+TTI[51 ] - link[33 , 27 ] - node[33 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[51 ] - link[33 , 27 ] - node[27 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[52 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[52 ] - link[27 , 59 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[52 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[193, 121] - node[193] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[193, 121] - node[121] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[125, 160] - node[125] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[125, 160] - node[160] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[52 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[52 ] - link[195, 39 ] - {SUCCEED}
+TTI[52 ] - link[195, 39 ] - node[195] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[52 ] - link[195, 39 ] - node[39 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[53 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[53 ] - link[39 , 111] - node[111] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[53 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[53 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[53 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[53 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[53 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[53 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[53 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[53 ] - link[193, 121] - node[193] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[53 ] - link[193, 121] - node[121] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[53 ] - link[125, 160] - node[125] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[53 ] - link[125, 160] - node[160] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[53 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[53 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[54 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[54 ] - link[27 , 59 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[54 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[54 ] - link[39 , 111] - node[111] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[54 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[54 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[54 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[54 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[54 ] - link[193, 121] - node[193] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[54 ] - link[193, 121] - node[121] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[54 ] - link[125, 160] - node[125] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[54 ] - link[125, 160] - node[160] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[54 ] - link[128, 201] - node[128] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[54 ] - link[128, 201] - node[201] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[54 ] - link[148, 12 ] - {SUCCEED}
+TTI[54 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[54 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[55 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[55 ] - link[12 , 87 ] - node[87 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[55 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[55 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[55 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[55 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[55 ] - link[39 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[55 ] - link[193, 121] - node[193] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[55 ] - link[193, 121] - node[121] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[55 ] - link[156, 86 ] - {SUCCEED}
+TTI[55 ] - link[156, 86 ] - node[156] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[55 ] - link[156, 86 ] - node[86 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[55 ] - link[125, 160] - {SUCCEED}
+TTI[55 ] - link[125, 160] - node[125] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[55 ] - link[125, 160] - node[160] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[55 ] - link[128, 201] - {SUCCEED}
+TTI[55 ] - link[128, 201] - node[128] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[55 ] - link[128, 201] - node[201] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[56 ] - trigger[141, 124]
+TTI[56 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[56 ] - link[27 , 59 ] - node[59 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[56 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[56 ] - link[86 , 15 ] - node[15 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[56 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[56 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[56 ] - link[201, 171] - node[201] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[56 ] - link[201, 171] - node[171] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[56 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[56 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[56 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[56 ] - link[39 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[56 ] - link[59 , 51 ] - {SUCCEED}
+TTI[56 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[56 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[56 ] - link[193, 121] - {SUCCEED}
+TTI[56 ] - link[193, 121] - node[193] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[56 ] - link[193, 121] - node[121] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[57 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[57 ] - link[51 , 46 ] - node[46 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[57 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[57 ] - link[121, 56 ] - node[56 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[57 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[57 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[57 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[57 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[57 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[57 ] - link[201, 171] - node[201] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[57 ] - link[201, 171] - node[171] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[57 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[57 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[57 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[57 ] - link[39 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[58 ] - trigger[73 , 213]
+TTI[58 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[58 ] - link[73 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[58 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[58 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[58 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[58 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[58 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[58 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[58 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[58 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[58 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[58 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[58 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[58 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[58 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[58 ] - link[39 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[58 ] - link[201, 171] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[58 ] - link[201, 171] - node[171] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - trigger[58 , 61 ]
+TTI[59 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[59 ] - link[58 , 61 ] - node[61 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[59 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[59 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[59 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[201, 171] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[59 ] - link[201, 171] - node[171] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[59 ] - link[39 , 111] - {SUCCEED}
+TTI[59 ] - link[39 , 111] - node[39 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[59 ] - link[39 , 111] - node[111] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[60 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[60 ] - link[73 , 111] - node[111] - curr_state[SOURCE_SEND_SYN     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[60 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[60 ] - link[111, 0  ] - node[0  ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[60 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[60 ] - link[141, 111] - node[111] - curr_state[SOURCE_SEND_SYN     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[60 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[60 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[60 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[60 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[60 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[60 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[60 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[60 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[60 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[60 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[60 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[60 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[60 ] - link[201, 171] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[60 ] - link[201, 171] - node[171] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[61 ] - trigger[42 , 36 ]
+TTI[61 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[61 ] - link[42 , 8  ] - node[8  ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[61 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[61 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[61 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[61 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[61 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[61 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[61 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[61 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[61 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[61 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[61 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[61 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[61 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[61 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[61 ] - link[201, 171] - node[201] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[61 ] - link[201, 171] - node[171] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[61 ] - link[12 , 87 ] - {SUCCEED}
+TTI[61 ] - link[12 , 87 ] - node[12 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[61 ] - link[12 , 87 ] - node[87 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[62 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[62 ] - link[73 , 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[62 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[62 ] - link[141, 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[62 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[62 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[62 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[62 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[62 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[62 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[62 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[62 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[62 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[62 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[62 ] - link[86 , 15 ] - {SUCCEED}
+TTI[62 ] - link[86 , 15 ] - node[86 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[62 ] - link[86 , 15 ] - node[15 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[62 ] - link[27 , 59 ] - {SUCCEED}
+TTI[62 ] - link[27 , 59 ] - node[27 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[62 ] - link[27 , 59 ] - node[59 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[62 ] - link[201, 171] - {SUCCEED}
+TTI[62 ] - link[201, 171] - node[201] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[62 ] - link[201, 171] - node[171] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[63 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[63 ] - link[59 , 51 ] - node[51 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[63 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[63 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[63 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[63 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[63 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[63 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[63 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[63 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[63 ] - link[51 , 46 ] - {SUCCEED}
+TTI[63 ] - link[51 , 46 ] - node[51 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[63 ] - link[51 , 46 ] - node[46 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[63 ] - link[121, 56 ] - {SUCCEED}
+TTI[63 ] - link[121, 56 ] - node[121] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[63 ] - link[121, 56 ] - node[56 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[64 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[64 ] - link[56 , 62 ] - node[62 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[64 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[64 ] - link[73 , 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[64 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[64 ] - link[141, 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[64 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[64 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[64 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[64 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[64 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[64 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[64 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[64 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[65 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[65 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[65 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[65 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[65 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[65 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[65 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[65 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[65 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[65 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[65 ] - link[58 , 61 ] - {SUCCEED}
+TTI[65 ] - link[58 , 61 ] - node[58 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[65 ] - link[58 , 61 ] - node[61 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[66 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[66 ] - link[73 , 111] - node[111] - curr_state[SOURCE_LINK_RESPONSE] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[66 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[66 ] - link[141, 111] - node[111] - curr_state[SOURCE_LINK_RESPONSE] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[66 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[66 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[66 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[66 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[66 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[66 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[66 ] - link[111, 0  ] - {SUCCEED}
+TTI[66 ] - link[111, 0  ] - node[111] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[66 ] - link[111, 0  ] - node[0  ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[67 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[67 ] - link[0  , 139] - node[139] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[67 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[67 ] - link[73 , 111] - node[111] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[67 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[67 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[67 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[67 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[67 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[67 ] - link[42 , 8  ] - {SUCCEED}
+TTI[67 ] - link[42 , 8  ] - node[42 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[67 ] - link[42 , 8  ] - node[8  ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[68 ] - trigger[211, 32 ]
+TTI[68 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[68 ] - link[8  , 75 ] - node[75 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[68 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[68 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[68 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[68 ] - link[211, 32 ] - node[32 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[68 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[68 ] - link[0  , 139] - node[139] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[68 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[68 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[68 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[68 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[68 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[68 ] - link[73 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[69 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[69 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[69 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[69 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[69 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[69 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[69 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[69 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[69 ] - link[73 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[69 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[69 ] - link[0  , 139] - node[139] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[69 ] - link[59 , 51 ] - {SUCCEED}
+TTI[69 ] - link[59 , 51 ] - node[59 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[69 ] - link[59 , 51 ] - node[51 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[70 ] - trigger[110, 200]
+TTI[70 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[70 ] - link[51 , 18 ] - node[18 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[70 ] - link[110, 117] - node[110] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[70 ] - link[110, 117] - node[117] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[70 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[70 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[70 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[70 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[70 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[70 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[70 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[70 ] - link[73 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[70 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[70 ] - link[0  , 139] - node[139] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[70 ] - link[56 , 62 ] - {SUCCEED}
+TTI[70 ] - link[56 , 62 ] - node[56 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[70 ] - link[56 , 62 ] - node[62 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[71 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[71 ] - link[62 , 207] - node[207] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[71 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[71 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[71 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[71 ] - link[110, 117] - node[110] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[71 ] - link[110, 117] - node[117] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[71 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[71 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[71 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[71 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[71 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[71 ] - link[73 , 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[71 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[71 ] - link[0  , 139] - node[139] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[72 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[72 ] - link[141, 111] - node[111] - curr_state[RELAY_LINK_RESPONSE ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[72 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[72 ] - link[62 , 207] - node[207] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[72 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[72 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[72 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[72 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[72 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[72 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[72 ] - link[110, 117] - node[110] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[72 ] - link[110, 117] - node[117] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[72 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[72 ] - link[0  , 139] - node[139] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[72 ] - link[73 , 111] - {SUCCEED}
+TTI[72 ] - link[73 , 111] - node[73 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[72 ] - link[73 , 111] - node[111] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[73 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[73 ] - link[111, 81 ] - node[81 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[73 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[73 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[73 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[73 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[73 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[73 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[73 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[73 ] - link[110, 117] - node[110] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[73 ] - link[110, 117] - node[117] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[73 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[73 ] - link[62 , 207] - node[207] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[73 ] - link[0  , 139] - {SUCCEED}
+TTI[73 ] - link[0  , 139] - node[0  ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[73 ] - link[0  , 139] - node[139] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[74 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[74 ] - link[141, 111] - node[111] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[74 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[74 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[74 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[74 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[74 ] - link[110, 117] - node[110] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[74 ] - link[110, 117] - node[117] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[74 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[74 ] - link[62 , 207] - node[207] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[74 ] - link[211, 32 ] - {SUCCEED}
+TTI[74 ] - link[211, 32 ] - node[211] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[74 ] - link[211, 32 ] - node[32 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[74 ] - link[8  , 75 ] - {SUCCEED}
+TTI[74 ] - link[8  , 75 ] - node[8  ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[74 ] - link[8  , 75 ] - node[75 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[75 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[75 ] - link[75 , 36 ] - node[36 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[75 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[75 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[75 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[75 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[75 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[75 ] - link[110, 117] - node[110] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[75 ] - link[110, 117] - node[117] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[75 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[75 ] - link[62 , 207] - node[207] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[76 ] - trigger[117, 2  ]
+TTI[76 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[76 ] - link[141, 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[76 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[76 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[76 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[76 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[76 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[76 ] - link[62 , 207] - node[207] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[76 ] - link[51 , 18 ] - {SUCCEED}
+TTI[76 ] - link[51 , 18 ] - node[51 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[76 ] - link[51 , 18 ] - node[18 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[76 ] - link[110, 117] - {SUCCEED}
+TTI[76 ] - link[110, 117] - node[110] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[76 ] - link[110, 117] - node[117] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[77 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[77 ] - link[18 , 80 ] - node[80 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[77 ] - link[117, 109] - node[117] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[77 ] - link[117, 109] - node[109] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[77 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[77 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[77 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[77 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[77 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[77 ] - link[62 , 207] - {SUCCEED}
+TTI[77 ] - link[62 , 207] - node[62 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[77 ] - link[62 , 207] - node[207] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[78 ] - trigger[144, 159]
+TTI[78 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[78 ] - link[141, 111] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[78 ] - link[144, 148] - node[144] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[78 ] - link[144, 148] - node[148] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[78 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[78 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[78 ] - link[117, 109] - node[117] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[78 ] - link[117, 109] - node[109] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[78 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[78 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[78 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[78 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[79 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[79 ] - link[144, 148] - node[144] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[79 ] - link[144, 148] - node[148] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[79 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[79 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[79 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[79 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[79 ] - link[117, 109] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[79 ] - link[117, 109] - node[109] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[79 ] - link[111, 81 ] - {SUCCEED}
+TTI[79 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[79 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[80 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[80 ] - link[81 , 47 ] - node[47 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[80 ] - link[141, 111] - node[141] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[80 ] - link[141, 111] - node[111] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[80 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[80 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[80 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[80 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[80 ] - link[117, 109] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[80 ] - link[117, 109] - node[109] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[80 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[80 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[81 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[81 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[81 ] - link[141, 111] - node[141] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[81 ] - link[141, 111] - node[111] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[81 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[81 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[81 ] - link[117, 109] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[81 ] - link[117, 109] - node[109] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[81 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[81 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[81 ] - link[75 , 36 ] - {SUCCEED}
+TTI[81 ] - link[75 , 36 ] - node[75 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[81 ] - link[75 , 36 ] - node[36 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[82 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[82 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[82 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[82 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[82 ] - link[117, 109] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[82 ] - link[117, 109] - node[109] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[82 ] - link[141, 111] - node[141] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[82 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[82 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[82 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[83 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[83 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[83 ] - link[141, 111] - node[141] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[83 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[83 ] - link[144, 148] - node[144] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[83 ] - link[144, 148] - node[148] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[83 ] - link[18 , 80 ] - {SUCCEED}
+TTI[83 ] - link[18 , 80 ] - node[18 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[83 ] - link[18 , 80 ] - node[80 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[83 ] - link[117, 109] - {SUCCEED}
+TTI[83 ] - link[117, 109] - node[117] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[83 ] - link[117, 109] - node[109] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[84 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[84 ] - link[80 , 110] - node[110] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[84 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[84 ] - link[109, 2  ] - node[2  ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[84 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[84 ] - link[117, 19 ] - node[19 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[84 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[84 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[84 ] - link[141, 111] - node[141] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[84 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[84 ] - link[144, 148] - {SUCCEED}
+TTI[84 ] - link[144, 148] - node[144] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[84 ] - link[144, 148] - node[148] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[85 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[85 ] - link[148, 12 ] - node[12 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[85 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[85 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[85 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[85 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[85 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[85 ] - link[80 , 110] - node[110] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[85 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[85 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[85 ] - link[141, 111] - node[141] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[85 ] - link[141, 111] - node[111] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[86 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[86 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[86 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[86 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[86 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[86 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[86 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[86 ] - link[80 , 110] - node[110] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[86 ] - link[81 , 47 ] - {SUCCEED}
+TTI[86 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[86 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[86 ] - link[141, 111] - {SUCCEED}
+TTI[86 ] - link[141, 111] - node[141] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[86 ] - link[141, 111] - node[111] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[87 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[87 ] - link[47 , 200] - node[200] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[87 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[87 ] - link[111, 81 ] - node[81 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[87 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[87 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[87 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[87 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[87 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[87 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[87 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[87 ] - link[80 , 110] - node[110] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[88 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[88 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[88 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[88 ] - link[47 , 200] - node[200] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[88 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[88 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[88 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[88 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[88 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[88 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[88 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[88 ] - link[80 , 110] - node[110] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[89 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[89 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[89 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[89 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[89 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[89 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[89 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[89 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[89 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[89 ] - link[80 , 110] - node[110] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[89 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[89 ] - link[47 , 200] - node[200] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[90 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[90 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[90 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[90 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[90 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[90 ] - link[47 , 200] - node[200] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[90 ] - link[109, 2  ] - {SUCCEED}
+TTI[90 ] - link[109, 2  ] - node[109] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[90 ] - link[109, 2  ] - node[2  ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[90 ] - link[117, 19 ] - {SUCCEED}
+TTI[90 ] - link[117, 19 ] - node[117] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[90 ] - link[117, 19 ] - node[19 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[90 ] - link[80 , 110] - {SUCCEED}
+TTI[90 ] - link[80 , 110] - node[80 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[90 ] - link[80 , 110] - node[110] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[91 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[91 ] - link[19 , 155] - node[155] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[91 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[91 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[91 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[91 ] - link[47 , 200] - node[200] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[91 ] - link[148, 12 ] - {SUCCEED}
+TTI[91 ] - link[148, 12 ] - node[148] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[91 ] - link[148, 12 ] - node[12 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[92 ] - trigger[55 , 87 ]
+TTI[92 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[92 ] - link[12 , 49 ] - node[49 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[92 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[92 ] - link[55 , 87 ] - node[87 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[92 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[92 ] - link[19 , 155] - node[155] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[92 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[92 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[92 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[92 ] - link[47 , 200] - node[200] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[93 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[93 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[93 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[93 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[93 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[93 ] - link[19 , 155] - node[155] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[93 ] - link[111, 81 ] - {SUCCEED}
+TTI[93 ] - link[111, 81 ] - node[111] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[93 ] - link[111, 81 ] - node[81 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[93 ] - link[47 , 200] - {SUCCEED}
+TTI[93 ] - link[47 , 200] - node[47 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[93 ] - link[47 , 200] - node[200] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[94 ] - trigger[170, 22 ]
+TTI[94 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[94 ] - link[81 , 47 ] - node[47 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[94 ] - link[170, 129] - node[170] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[94 ] - link[170, 129] - node[129] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[94 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[94 ] - link[200, 93 ] - node[93 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[94 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[94 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[94 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[94 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[94 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[94 ] - link[19 , 155] - node[155] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[95 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[95 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[95 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[95 ] - link[200, 93 ] - node[93 ] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[95 ] - link[170, 129] - node[170] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[95 ] - link[170, 129] - node[129] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[95 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[95 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[95 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[95 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[95 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[95 ] - link[19 , 155] - node[155] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[96 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[96 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[96 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[96 ] - link[200, 93 ] - node[93 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[170, 129] - node[170] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[96 ] - link[170, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[96 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[96 ] - link[19 , 155] - node[155] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[97 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[97 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[97 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[97 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[97 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[97 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[97 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[97 ] - link[200, 93 ] - node[93 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[97 ] - link[170, 129] - node[170] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[97 ] - link[170, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[97 ] - link[19 , 155] - {SUCCEED}
+TTI[97 ] - link[19 , 155] - node[19 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[97 ] - link[19 , 155] - node[155] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[98 ] - trigger[79 , 139]
+TTI[98 ] - link[79 , 183] - node[79 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[98 ] - link[79 , 183] - node[183] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[98 ] - link[155, 200] - node[155] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[98 ] - link[155, 200] - node[200] - curr_state[SOURCE_SENDING      ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[98 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[98 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[98 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[98 ] - link[200, 93 ] - node[93 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[98 ] - link[170, 129] - node[170] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_SENDING      ] - process_transimit_connection：尚未传完，准备继续发送
+TTI[98 ] - link[170, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_RECEIVING     ] - process_transimit_connection：尚未传完，准备继续接收
+TTI[98 ] - link[12 , 49 ] - {SUCCEED}
+TTI[98 ] - link[12 , 49 ] - node[12 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[98 ] - link[12 , 49 ] - node[49 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[SOURCE_SEND_SYN     ] - process_response_connection：尚未传输完毕，从接收节点转为发送节点
+TTI[98 ] - link[55 , 87 ] - {SUCCEED}
+TTI[98 ] - link[55 , 87 ] - node[55 ] - curr_state[SOURCE_LINK_RESPONSE] - next_state[IDLE                ] - process_response_connection：成功发送，准备进入空闲状态
+TTI[98 ] - link[55 , 87 ] - node[87 ] - curr_state[RELAY_LINK_RESPONSE ] - next_state[IDLE                ] - process_response_connection：整条链路完毕，准备进入空闲状态
+TTI[99 ] - trigger[176, 16 ]
+TTI[99 ] - link[49 , 159] - node[49 ] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[99 ] - link[49 , 159] - node[159] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[99 ] - link[176, 27 ] - node[176] - curr_state[SOURCE_SEND_SYN     ] - next_state[SOURCE_RECEIVE_ACK  ] - process_syn_connection：发送syn请求，准等待ack
+TTI[99 ] - link[176, 27 ] - node[27 ] - curr_state[IDLE                ] - next_state[RELAY_SEND_ACK      ] - process_syn_connection：未知状态，准备发送ack
+TTI[99 ] - link[79 , 183] - node[79 ] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SENDING      ] - process_ack_connection：收到接收ack，准备发送数据
+TTI[99 ] - link[79 , 183] - node[183] - curr_state[RELAY_SEND_ACK      ] - next_state[RELAY_RECEIVING     ] - process_ack_connection：发送ack，准备接收数
+TTI[99 ] - link[155, 200] - node[155] - curr_state[SOURCE_RECEIVE_ACK  ] - next_state[SOURCE_SEND_SYN     ] - process_ack_connection：收到拒收ack，准备再次发送syn
+TTI[99 ] - link[81 , 47 ] - node[81 ] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[99 ] - link[81 , 47 ] - node[47 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[99 ] - link[200, 93 ] - node[200] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[99 ] - link[200, 93 ] - node[93 ] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
+TTI[99 ] - link[170, 129] - node[170] - curr_state[SOURCE_SENDING      ] - next_state[SOURCE_LINK_RESPONSE] - process_transimit_connection：发送完毕，准备等待response
+TTI[99 ] - link[170, 129] - node[129] - curr_state[RELAY_RECEIVING     ] - next_state[RELAY_LINK_RESPONSE ] - process_transimit_connection：接收完毕，准备发送response
