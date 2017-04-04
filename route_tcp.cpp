@@ -102,7 +102,7 @@ int route_tcp_node::source_select_relay_node() {
 
 	double min_distance = (numeric_limits<double>::max)();
 	for (int near_node_id : m_adjacent_list) {
-		int cur_distance = vue_physics::get_distance(near_node_id, final_destination_node_id);
+		double cur_distance = vue_physics::get_distance(near_node_id, final_destination_node_id);
 		if (cur_distance< min_distance) {
 			min_distance = cur_distance;
 			res = near_node_id;
@@ -123,7 +123,7 @@ std::pair<int, std::vector<int>> route_tcp_node::relay_response_ack() {
 		reject_vec = get_relay_node()->m_pre_syn_node_vec;
 	}
 	else {
-		uniform_int_distribution<int> u(0, get_relay_node()->m_pre_syn_node_vec.size() - 1);
+		uniform_int_distribution<int> u(0, static_cast<int>(get_relay_node()->m_pre_syn_node_vec.size()) - 1);
 
 		select_node_id = get_relay_node()->m_pre_syn_node_vec[u(s_engine)];
 
@@ -230,6 +230,8 @@ string route_tcp::state_to_string(route_tcp_node_state state) {
 		return "RELAY_RECEIVING";
 	case RELAY_LINK_RESPONSE:
 		return "RELAY_LINK_RESPONSE";
+	default:
+		throw logic_error("error");
 	}
 }
 
