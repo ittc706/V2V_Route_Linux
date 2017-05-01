@@ -38,7 +38,7 @@ void context::init() {
 }
 
 void context::parse_configuration() {
-	bean_definitions.swap(loader->load());
+	bean_definitions = loader->load();
 }
 
 void context::create_and_init_bean() {

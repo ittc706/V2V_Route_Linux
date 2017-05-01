@@ -33,7 +33,7 @@ sleep 2s
 
 # Begin converting the encoding format
 
-files=$(find . -regex ".*\.\(h\|cpp\|xml\)")
+files=$(find . -regex ".*\.\(h\|cpp\)")
 
 for file in $files
 do

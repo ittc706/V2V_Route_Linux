@@ -25,7 +25,7 @@
 	<property name="total_bandwidth", value="10"/>
 	<property name="rb_num_per_pattern", value="10"/>
 	<property name="drop_sinr_boundary", value="1.99"/>
-	<!--璧勬簮鍒嗛厤绠楁硶
+	<!--资源分配算法
 		1:base
 		2:based on sensing
 		3:base on sensing classical
