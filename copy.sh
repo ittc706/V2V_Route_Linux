@@ -21,13 +21,13 @@ echo $description >> README.md
 
 # Remove the old files
 rm -f *.h *.cpp
-rm -rf config log wt
+rm -rf config log wt reflect
 
 sleep 2s
 
 # Copy files from V2V_Route
 cp -a ../V2V_Route/V2V_Route/*.cpp  ../V2V_Route/V2V_Route/*.h  .
-cp -a ../V2V_Route/V2V_Route/config ../V2V_Route/V2V_Route/log ../V2V_Route/V2V_Route/wt .
+cp -a ../V2V_Route/V2V_Route/config ../V2V_Route/V2V_Route/log ../V2V_Route/V2V_Route/wt ../V2V_Route/V2V_Route/reflect .
 
 sleep 2s
 
