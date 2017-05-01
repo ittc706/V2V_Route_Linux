@@ -116,6 +116,10 @@ int gtt_urban::get_vue_num() {
 	return vue_physics::get_vue_num();
 }
 
+int gtt_urban::get_freshtime() {
+	return get_config()->get_freshtime();
+}
+
 void gtt_urban::fresh_location() {
 	//<Warn>:将信道刷新时间和位置刷新时间分开
 	if (get_time()->get_tti() % get_config()->get_freshtime() != 0) {

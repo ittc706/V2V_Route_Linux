@@ -181,6 +181,10 @@ void route_tcp::initialize() {
 }
 
 void route_tcp::process_per_tti() {
+	//<Warn>:目前tcp模式还是根据距离来维护的邻接表
+	//更新邻接表
+	update_route_table_from_physics_level();
+
 	//事件触发
 	event_trigger();
 
@@ -198,6 +202,9 @@ void route_tcp::process_per_tti() {
 }
 
 void route_tcp::update_route_table_from_physics_level() {
+	//<Warn>:目前tcp模式还是根据距离来维护的邻接表
+	if (get_time()->get_tti() % get_gtt()->get_freshtime() != 0) return;
+
 	//清除之前的邻接表
 	for (int node_id = 0; node_id < route_tcp_node::s_node_count; node_id++) {
 		get_node_array()[node_id].m_adjacent_list.clear();

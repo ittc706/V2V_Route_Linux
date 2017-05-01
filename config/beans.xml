@@ -1,5 +1,5 @@
 <bean id="global_control_config", class="global_control_config">
-	<property name="ntti", value="100"/>
+	<property name="ntti", value="1000"/>
 </bean>
 
 <bean id="gtt_highspeed_config", class="gtt_highspeed_config">
@@ -62,13 +62,24 @@
 	<dependency name="global_control_config", ref-id="global_control_config"/>
 </bean>
 
+<!--
 <bean id="gtt", class="gtt_highspeed">	
 	<dependency name="config", ref-id="gtt_highspeed_config"/>
 	<dependency name="time", ref-id="time"/>
 	<dependency name="rrm_config", ref-id="rrm_config"/>
 	<post-processor method_name="initialize"/>
 </bean>
+-->
 
+<bean id="gtt", class="gtt_urban">	
+	<dependency name="config", ref-id="gtt_urban_config"/>
+	<dependency name="time", ref-id="time"/>
+	<dependency name="rrm_config", ref-id="rrm_config"/>
+	<post-processor method_name="initialize"/>
+</bean>
+
+
+<!--
 <bean id="route", class="route_udp">	
 	<dependency name="time", ref-id="time"/>
 	<dependency name="gtt", ref-id="gtt"/>
@@ -78,6 +89,17 @@
 	<dependency name="route_config", ref-id="route_config"/>
 	<post-processor method_name="initialize"/>
 </bean>
+-->
+<bean id="route", class="route_tcp">	
+	<dependency name="time", ref-id="time"/>
+	<dependency name="gtt", ref-id="gtt"/>
+	<dependency name="wt", ref-id="wt"/>
+	<dependency name="rrm_config", ref-id="rrm_config"/>
+	<dependency name="tmc_config", ref-id="tmc_config"/>
+	<dependency name="route_config", ref-id="route_config"/>
+	<post-processor method_name="initialize"/>
+</bean>
+
 
 <bean id="tmc", class="tmc">	
 	

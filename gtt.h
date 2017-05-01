@@ -35,6 +35,11 @@ public:
 	virtual int get_vue_num() = 0;
 
 	/*
+	* 获取车辆数量
+	*/
+	virtual int get_freshtime() = 0;
+
+	/*
 	* 用于更新车辆位置
 	*/
 	virtual void fresh_location() = 0;

@@ -15,6 +15,8 @@ vector<bean_definition*> bean_loader::load() {
 
 	const regex BEAN_REGEX("<bean([^>]+)>([\\s\\S]*?)</bean>");
 
+	const regex ANNOTATION_REGEX("<!--[\\s\\S]*?-->");
+
 
 	//读取待解析字符串
 	ifstream in(configuration_path);
@@ -26,6 +28,11 @@ vector<bean_definition*> bean_loader::load() {
 	istreambuf_iterator<char> if_it(in), if_eof;
 	string content(if_it, if_eof);
 	in.close();
+
+
+	//首先除去注释
+	content = regex_replace(content, ANNOTATION_REGEX, "");
+
 
 	//解析，并存储
 	for (sregex_iterator it(content.begin(), content.end(), BEAN_REGEX), eof; it != eof; ++it) {

@@ -24,7 +24,7 @@ public:
 	std::vector<bean_definition*> load();
 
 private:
-	bean_definition* bean_loader::create_bean_definition(const std::string s);
+	bean_definition* create_bean_definition(const std::string s);
 
 	/*
 	* 添加属性值

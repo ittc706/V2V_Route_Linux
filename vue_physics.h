@@ -5,6 +5,8 @@
 #include<random>
 #include<list>
 
+class vue;
+
 class vue_physics {
 	/*------------------友元声明------------------*/
 	/*

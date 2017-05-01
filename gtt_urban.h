@@ -45,6 +45,8 @@ public:
 
 	int get_vue_num() override;
 
+	int get_freshtime() override;
+
 	void fresh_location() override;
 
 	void calculate_pl(int t_vue_id1, int t_vue_id2) override;
