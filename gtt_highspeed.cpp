@@ -17,7 +17,7 @@
 */
 
 #include<fstream>
-#include"context.h"
+#include<memory.h>
 #include"route.h"
 #include"config.h"
 #include"gtt_highspeed.h"
@@ -25,14 +25,13 @@
 #include"vue_physics.h"
 #include"imta.h"
 #include"function.h"
-#include<memory.h>
-
-
+#include"reflect/context.h"
+#include"time_stamp.h"
 
 using namespace std;
 
 void gtt_highspeed::initialize() {
-	gtt_highspeed_config* __config = get_precise_config();
+	gtt_highspeed_config* __config = get_config();
 	int* m_pupr = new int[__config->get_road_num()];//每条路上的车辆数
 	double* TotalTime = new double[__config->get_road_num()];//每条道路初始泊松撒点过程中所有车辆都已撒进区域内所用的总时间
 	std::list<double>* possion = new std::list<double>[__config->get_road_num()];//每条道路初始泊松撒点的车辆到达时间间隔list，单位s
@@ -64,21 +63,15 @@ void gtt_highspeed::initialize() {
 	}
 
 	//进行车辆的撒点
-	context::get_context()->set_vue_array(new vue[tempVeUENum]);
+	m_vue_array = new vue[tempVeUENum];
 	int vue_id = 0;
 
 	/*ofstream vue_coordinate;
-
-	if (context::get_context()->get_global_control_config()->get_platform() == Windows) {
-		vue_coordinate.open("log\\vue_coordinate.txt");
-	}
-	else {
-		vue_coordinate.open("log/vue_coordinate.txt");
-	}*/
+	vue_coordinate.open("log/vue_coordinate.txt");*/
 
 	for (int roadId = 0; roadId != __config->get_road_num(); roadId++) {
 		for (int uprIdx = 0; uprIdx != m_pupr[roadId]; uprIdx++) {
-			auto p = context::get_context()->get_vue_array()[vue_id++].get_physics_level();
+			auto p = get_vue_array()[vue_id++].get_physics_level();
 			p->m_speed = __config->get_speed()/3.6;
 		    p->m_absx = -1732 + (TotalTime[roadId] - possion[roadId].back())*(p->m_speed);
 			p->m_absy = __config->get_road_topo_ratio()[roadId * 2 + 1]* __config->get_road_width();
@@ -91,11 +84,11 @@ void gtt_highspeed::initialize() {
 			possion[roadId].pop_back();
 		
 			//初始化pattern占用情况的数组全为false，即未被占用状态
-			p->m_pattern_occupied = new bool[context::get_context()->get_rrm_config()->get_pattern_num()];
+			p->m_pattern_occupied = new bool[get_rrm_config()->get_pattern_num()];
 			memset(p->m_pattern_occupied, false, sizeof(p->m_pattern_occupied));
 
 			//根据是否采用时分的资源分配算法决定是否维护m_slot_time_idx,即当前车辆能发送数据的TTI
-			int granularity = context::get_context()->get_rrm_config()->get_time_division_granularity();
+			int granularity = get_rrm_config()->get_time_division_granularity();
 			if (granularity == 2) {
 				double zone_length = 346.41;
 				int zone_idx = (int)abs((p->m_absx - (-1732.0f)) / 346.4f);//0到9
@@ -125,16 +118,15 @@ int gtt_highspeed::get_vue_num() {
 
 void gtt_highspeed::fresh_location() {
 	//<Warn>:将信道刷新时间和位置刷新时间分开
-	if (context::get_context()->get_tti() % get_precise_config()->get_freshtime() != 0) {
+	if (get_time()->get_tti() % get_config()->get_freshtime() != 0) {
 		return;
 	}
-
 	for (int vue_id = 0; vue_id < get_vue_num(); vue_id++) {
-		context::get_context()->get_vue_array()[vue_id].get_physics_level()->update_location_highspeed();
+		get_vue_array()[vue_id].get_physics_level()->update_location_highspeed();
 
 		//每次更新车辆位置时重新判断车辆所在的zone_idx
-		auto p = context::get_context()->get_vue_array()[vue_id].get_physics_level();
-		int granularity = context::get_context()->get_rrm_config()->get_time_division_granularity();
+		auto p = get_vue_array()[vue_id].get_physics_level();
+		int granularity = get_rrm_config()->get_time_division_granularity();
 		if (granularity == 2) {
 			double zone_length = 346.41;
 			int zone_idx = (int)abs((p->m_absx - (-1732.0f)) / 346.4f);//0到9
@@ -149,14 +141,12 @@ void gtt_highspeed::fresh_location() {
 
 	for (int vue_id1 = 0; vue_id1 < get_vue_num(); vue_id1++) {
 		for (int vue_id2 = 0; vue_id2 < vue_id1; vue_id2++) {
-			auto vuei = context::get_context()->get_vue_array()[vue_id1].get_physics_level();
-			auto vuej = context::get_context()->get_vue_array()[vue_id2].get_physics_level();
+			auto vuei = get_vue_array()[vue_id1].get_physics_level();
+			auto vuej = get_vue_array()[vue_id2].get_physics_level();
 			vue_physics::set_distance(vue_id2, vue_id1, sqrt(pow((vuei->m_absx - vuej->m_absx), 2.0f) + pow((vuei->m_absy - vuej->m_absy), 2.0f)));
 			calculate_pl(vue_id1, vue_id2);
 		}
 	}
-
-	context::get_context()->get_route()->update_route_table_from_physics_level();
 }
 
 
@@ -178,8 +168,8 @@ void gtt_highspeed::calculate_pl(int t_vue_id1, int t_vue_id2) {
 
 	imta* __imta = new imta();
 
-	auto vuei = context::get_context()->get_vue_array()[t_vue_id1].get_physics_level();
-	auto vuej = context::get_context()->get_vue_array()[t_vue_id2].get_physics_level();
+	auto vuei = get_vue_array()[t_vue_id1].get_physics_level();
+	auto vuej = get_vue_array()[t_vue_id2].get_physics_level();
 
 	_location.locationType = Los;
 	_location.manhattan = false;
@@ -223,6 +213,3 @@ void gtt_highspeed::calculate_pl(int t_vue_id1, int t_vue_id2) {
 	memory_clean::safe_delete(__imta);
 }
 
-gtt_highspeed_config* gtt_highspeed::get_precise_config() {
-	return (gtt_highspeed_config*)get_config();
-}

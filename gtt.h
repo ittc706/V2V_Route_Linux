@@ -1,39 +1,29 @@
 #pragma once
-
 #include<string>
 #include"enumeration.h"
+#include"reflect/object.h"
 
-class gtt_config;
+class vue;
+class v2x_time;
+class rrm_config;
 
-class gtt {
-	/*------------------友元声明------------------*/
-	/*
-	* 将context设为友元，容器要为其注入依赖项
-	*/
-	friend class context;
-
-	/*--------------------静态--------------------*/
+class gtt:public object {
 public:
 	/*
-	* 根据gtt模式来生成gtt组件对象
+	* 获取时间对象
 	*/
-	static gtt* gtt_bind_by_mode(gtt_mode t_mode);
+	virtual v2x_time* get_time() = 0;
 
-	/*--------------------字段--------------------*/
 	/*
-	* 场景配置参数对象
+	* 获取车辆数组指针
 	*/
-private:
-	gtt_config* m_config;
-	void set_config(gtt_config* t_config) {
-		m_config = t_config;
-	}
-public:
-	gtt_config* get_config() {
-		return m_config;
-	}
+	virtual vue* get_vue_array() = 0;
 
-	/*--------------------接口--------------------*/
+	/*
+	* 获取无线资源管理配置对象
+	*/
+	virtual rrm_config* get_rrm_config() = 0;
+
 	/*
 	* 做一些初始化工作
 	*/

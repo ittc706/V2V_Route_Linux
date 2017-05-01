@@ -1,24 +1,56 @@
 #pragma once
 #include"enumeration.h"
+#include"reflect/object.h"
+
+enum route_transimit_state {
+	SUCCESS,
+	FAILURE
+};
 
 struct event_trigger_dto {
 	int source_vue_id;
 	int destination_vue_id;
 };
 
-class route {
-	/*------------------友元声明------------------*/
-	/*
-	* 将context设为友元，容器要为其注入依赖项
-	*/
-	friend class context;
+class v2x_time;
+class gtt;
+class wt;
+class rrm_config;
+class tmc_config;
+class route_config;
 
-	/*--------------------静态--------------------*/
-	/*
-	* 根据gtt模式来生成gtt组件对象
-	*/
-	static route* route_bind_by_mode(route_mode t_mode);
+class route:public object {
 public:
+	/*
+	* 获取时间对象
+	*/
+	virtual v2x_time* get_time() = 0;
+
+	/*
+	* 获取gtt控制器
+	*/
+	virtual gtt* get_gtt() = 0;
+
+	/*
+	* 获取wt控制器
+	*/
+	virtual wt* get_wt() = 0;
+
+	/*
+	* 获取无线资源管理配置对象
+	*/
+	virtual rrm_config* get_rrm_config() = 0;
+
+	/*
+	* 获取事件配置对象
+	*/
+	virtual tmc_config* get_tmc_config() = 0;
+
+	/*
+	* 获取路由配置对象
+	*/
+	virtual route_config* get_route_config() = 0;
+
 	/*
 	* 初始化
 	*/

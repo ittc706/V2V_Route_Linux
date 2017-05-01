@@ -15,6 +15,7 @@ class vue_physics {
 	friend class gtt_urban;
 	friend class receiver_event;
 	friend class vue_network;
+	friend class route_udp;
 
 	/*----------------拷贝控制成员----------------*/
 private:

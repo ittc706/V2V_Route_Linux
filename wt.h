@@ -4,15 +4,12 @@
 #include<random>
 #include<utility>
 #include<memory>
+#include"reflect/object.h"
 
 class sender_event;
 
-class wt {
-	/*------------------友元声明------------------*/
-	/*
-	* 将context设为友元，容器要为其注入依赖项
-	*/
-	friend class context;
+class wt :public object{
+	REGISTE_MEMBER_HEAD(wt)
 
 	/*---------------静态成员---------------*/
 private:
@@ -62,20 +59,8 @@ private:
 	*/
 	double m_sigma;
 
-	
-
 	/*------------------接口------------------*/
 public:
-	/*
-	* 默认构造函
-	*/
-	wt();
-
-	/*
-	* 析构函数
-	*/
-	~wt();
-
 	/*
 	* 计算载干比
 	* t_send_vue_id:当前链路的发送端车辆id

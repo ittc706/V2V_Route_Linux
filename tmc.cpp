@@ -18,34 +18,44 @@
 
 #include<random>
 #include<fstream>
-#include"context.h"
 #include"gtt.h"
 #include"tmc.h"
 #include"vue.h"
 #include"vue_physics.h"
 #include"config.h"
 #include"route_tcp.h"
+#include"route_udp.h"
+#include"reflect/context.h"
 
 using namespace std;
 
 void tmc::statistic() {
 	context* __context = context::get_context();
-	ofstream success_event;
-	if (context::get_context()->get_global_control_config()->get_platform() == Windows) {
-		success_event.open("log\\success_event.txt");
+	ofstream success_route_event;
+	ofstream failed_route_event;
+
+	success_route_event.open("log/success_event.txt");
+	failed_route_event.open("log/failed_event.txt");
+
+	object* __object = context::get_context()->get_bean("route");
+
+	if (__object->get_class_id()==route_tcp::class_id) {
+		route_tcp* __route_tcp = (route_tcp*)__object;
+		success_route_event << "total success event: " << __route_tcp->get_successful_event_vec().size() << endl;
+		failed_route_event << "total failed event: " << __route_tcp->get_failed_event_vec().size() << endl;
+
+		for (route_tcp_route_event* tcp_event : __route_tcp->get_successful_event_vec()) {
+			success_route_event << tcp_event->to_string();
+		}
 	}
 	else {
-		success_event.open("log/success_event.txt");
+		route_udp* __route_udp = (route_udp*)__object;
+		success_route_event << "total success event: " << __route_udp->get_success_route_event_num() << endl;
+		failed_route_event << "total failed event: " << __route_udp->get_failed_route_event_num() << endl;
+		for (route_udp_route_event* udp_event : __route_udp->get_successful_route_event_vec()) {
+			success_route_event << udp_event->to_string();
+		}
 	}
-
-	route_tcp* __route = (route_tcp*)(__context->get_route());
-
 	
-	success_event << "total success event: " << __route->get_successful_event_vec().size() << endl;
-
-
-	for (route_tcp_route_event* tcp_event : __route->get_successful_event_vec()) {
-		success_event << tcp_event->to_string();
-	}
-	success_event << endl;
+	success_route_event << endl;
 }

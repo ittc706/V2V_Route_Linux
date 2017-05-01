@@ -1,57 +1,94 @@
 #pragma once
+#include"reflect/object.h"
 
-class context;
+class v2x_time;
+class gtt;
+class route;
+class wt;
+class tmc;
+class global_control_config;
 
-class system_control {
-	/*------------------友元声明------------------*/
-	/*
-	* 将容器类作为友元，以提供依赖注入的权限
-	*/
-	friend class context;
+class system_control:public object {
+	REGISTE_MEMBER_HEAD(system_control)
 
 	/*------------------私有字段------------------*/
+	/*
+	* 仿真时刻对象
+	*/
+private:
+	v2x_time* m_time;
+	void set_time(object* t_time) {
+		m_time = (v2x_time*)t_time;
+	}
+public:
+	v2x_time* get_time() {
+		return m_time;
+	}
+
 private:
 	/*
-	* 持有容器的指针
+	* gtt模块控制器
 	*/
-	context* m_context = nullptr;
-	void set_context(context* t_context);
+	gtt* m_gtt;
+	void set_gtt(object* t_gtt) {
+		m_gtt = (gtt*)t_gtt;
+	}
 public:
-	context* get_context();
+	gtt* get_gtt() {
+		return m_gtt;
+	}
 
-
-	/*----------------拷贝控制成员----------------*/
+	/*
+	* route模块控制器
+	*/
+private:
+	route* m_route;
+	void set_route(object* t_route) {
+		m_route = (route*)t_route;
+	}
 public:
-	/*
-	* 默认构造函数
-	*/
-	system_control();
+	route* get_route() {
+		return m_route;
+	}
 
 	/*
-	* 析构函数，负责清理资源
+	* tmc模块控制器
 	*/
-	~system_control();
+private:
+	tmc* m_tmc;
+	void set_tmc(object* t_tmc) {
+		m_tmc = (tmc*)t_tmc;
+	}
+public:
+	tmc* get_tmc() {
+		return m_tmc;
+	}
 
 	/*
-	* 将拷贝构造函数定义为删除
+	* wt模块控制器
 	*/
-	system_control(const system_control& t_system_control) = delete;
+private:
+	wt* m_wt;
+	void set_wt(object* t_wt) {
+		m_wt = (wt*)t_wt;
+	}
+public:
+	wt* get_wt() {
+		return m_wt;
+	}
 
 	/*
-	* 将移动构造函数定义为删除
+	* 全局配置对象
 	*/
-	system_control(system_control&& t_system_control) = delete;
-
-	/*
-	* 将拷贝赋值运算符定义为删除
-	*/
-	system_control& operator=(const system_control& t_system_control) = delete;
-
-	/*
-	* 将移动赋值运算符定义为删除
-	*/
-	system_control& operator=(system_control&& t_system_control) = delete;
-
+private:
+	global_control_config* m_global_control_config;
+	void set_global_control_config(object* t_global_control_config) {
+		m_global_control_config = (global_control_config*)t_global_control_config;
+	}
+public:
+	global_control_config* get_global_control_config() {
+		return m_global_control_config;
+	}
 
 	/*--------------------接口--------------------*/
 public:

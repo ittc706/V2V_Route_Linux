@@ -17,9 +17,9 @@
 */
 
 #include<fstream>
+#include<memory.h>
 #include<utility>
 #include<random>
-#include"context.h"
 #include"route.h"
 #include"config.h"
 #include"gtt_urban.h"
@@ -27,15 +27,15 @@
 #include"vue_physics.h"
 #include"imta.h"
 #include"function.h"
-#include<memory.h>
-
+#include"reflect/context.h"
+#include"time_stamp.h"
 
 using namespace std;
 
 void gtt_urban::initialize() {
-	gtt_urban_config* __config = get_precise_config();
+	gtt_urban_config* __config = get_config();
 	int* m_pupr = new int[__config->get_road_num()];//每条路上的车辆数
-	
+
 	int tempVeUENum = 0;
 	int Lambda = static_cast<int>((__config->get_road_length_ew() + __config->get_road_length_sn()) * 2 * 3.6 / (2.5 * __config->get_speed()));
 	for (int temp = 0; temp != __config->get_road_num(); ++temp)
@@ -54,27 +54,21 @@ void gtt_urban::initialize() {
 	}
 
 	//进行车辆的撒点
-	context::get_context()->set_vue_array(new vue[tempVeUENum]);
+	m_vue_array=new vue[tempVeUENum];
 	cout << "vuenum: " << tempVeUENum << endl;
 
 	int vue_id = 0;
 	double DistanceFromBottomLeft = 0;
 
 	ofstream vue_coordinate;
-
-	if (context::get_context()->get_global_control_config()->get_platform() == Windows) {
-	vue_coordinate.open("log\\vue_coordinate.txt");
-	}
-	else {
 	vue_coordinate.open("log/vue_coordinate.txt");
-	}
 
 	default_random_engine e((unsigned)time(0));
 	uniform_real_distribution<double> u(0, 2 * (__config->get_road_length_ew() + __config->get_road_length_sn()));
 
 	for (int RoadIdx = 0; RoadIdx != __config->get_road_num(); RoadIdx++) {
 		for (int uprIdx = 0; uprIdx != m_pupr[RoadIdx]; uprIdx++) {
-			auto p = context::get_context()->get_vue_array()[vue_id++].get_physics_level();
+			auto p = get_vue_array()[vue_id++].get_physics_level();
 			DistanceFromBottomLeft = u(e);
 			if (DistanceFromBottomLeft <= __config->get_road_length_ew()) {
 				p->m_relx = -(__config->get_road_length_sn() + __config->get_road_width()) / 2;
@@ -99,14 +93,14 @@ void gtt_urban::initialize() {
 			p->m_road_id = RoadIdx;
 			p->m_absx = __config->get_road_topo_ratio()[RoadIdx * 2 + 0] * (__config->get_road_length_sn() + 2 * __config->get_road_width()) + p->m_relx;
 			p->m_absy = __config->get_road_topo_ratio()[RoadIdx * 2 + 1] * (__config->get_road_length_ew() + 2 * __config->get_road_width()) + p->m_rely;
-			p->m_speed = __config->get_speed()/3.6;
+			p->m_speed = __config->get_speed() / 3.6;
 			//将撒点后的坐标输出到txt文件
 			vue_coordinate << p->m_absx << " ";
 			vue_coordinate << p->m_absy << " ";
 			vue_coordinate << endl;
 
 			//初始化pattern占用情况的数组全为false，即未被占用状态
-			p->m_pattern_occupied = new bool[context::get_context()->get_rrm_config()->get_pattern_num()];
+			p->m_pattern_occupied = new bool[get_rrm_config()->get_pattern_num()];
 			memset(p->m_pattern_occupied, false, sizeof(p->m_pattern_occupied));
 		}
 	}
@@ -124,24 +118,22 @@ int gtt_urban::get_vue_num() {
 
 void gtt_urban::fresh_location() {
 	//<Warn>:将信道刷新时间和位置刷新时间分开
-	if (context::get_context()->get_tti() % get_precise_config()->get_freshtime() != 0) {
+	if (get_time()->get_tti() % get_config()->get_freshtime() != 0) {
 		return;
 	}
 
 	for (int vue_id = 0; vue_id < get_vue_num(); vue_id++) {
-		context::get_context()->get_vue_array()[vue_id].get_physics_level()->update_location_urban();
+		get_vue_array()[vue_id].get_physics_level()->update_location_urban();
 	}
 
 	for (int vue_id1 = 0; vue_id1 < get_vue_num(); vue_id1++) {
 		for (int vue_id2 = 0; vue_id2 < vue_id1; vue_id2++) {
-			auto vuei = context::get_context()->get_vue_array()[vue_id1].get_physics_level();
-			auto vuej = context::get_context()->get_vue_array()[vue_id2].get_physics_level();
+			auto vuei = get_vue_array()[vue_id1].get_physics_level();
+			auto vuej = get_vue_array()[vue_id2].get_physics_level();
 			vue_physics::set_distance(vue_id2, vue_id1, sqrt(pow((vuei->m_absx - vuej->m_absx), 2.0f) + pow((vuei->m_absy - vuej->m_absy), 2.0f)));
 			calculate_pl(vue_id1, vue_id2);
 		}
 	}
-
-	context::get_context()->get_route()->update_route_table_from_physics_level();
 }
 
 void gtt_urban::calculate_pl(int t_vue_id1, int t_vue_id2) {
@@ -162,8 +154,8 @@ void gtt_urban::calculate_pl(int t_vue_id1, int t_vue_id2) {
 
 	imta* __imta = new imta();
 
-	auto vuei = context::get_context()->get_vue_array()[t_vue_id1].get_physics_level();
-	auto vuej = context::get_context()->get_vue_array()[t_vue_id2].get_physics_level();
+	auto vuei = get_vue_array()[t_vue_id1].get_physics_level();
+	auto vuej = get_vue_array()[t_vue_id2].get_physics_level();
 
 	//判断车辆运动方向是东西方向还是南北方向，true代表东西方向，false代表南北方向
 	bool v_diri, v_dirj;
@@ -240,9 +232,5 @@ void gtt_urban::calculate_pl(int t_vue_id1, int t_vue_id2) {
 	memory_clean::safe_delete(_antenna.RxAntSpacing, true);
 
 	memory_clean::safe_delete(__imta);
-	
-}
 
-gtt_urban_config* gtt_urban::get_precise_config() {
-	return (gtt_urban_config*)get_config();
 }

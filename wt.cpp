@@ -19,10 +19,10 @@
 #include<fstream>
 #include<iterator>
 #include<vector>
-#include"context.h"
 #include"config.h"
 #include"wt.h"
 #include"vue_physics.h"
+#include"reflect/context.h"
 
 
 using namespace std;
@@ -33,29 +33,17 @@ std::vector<double>* wt::m_qpsk_mi = nullptr;
 
 void wt::set_resource() {
 	ifstream in;
-	if (context::get_context()->get_global_control_config()->get_platform()== Windows) {
-		in.open("wt\\qpsk_mi.md");
-	}
-	else {
-		in.open("wt/qpsk_mi.md");
-	}
+	in.open("wt/qpsk_mi.md");
+
 	m_qpsk_mi = new vector<double>();
 	istream_iterator<double> in_iter(in), eof;
 	m_qpsk_mi->assign(in_iter, eof);
 	in.close();
 }
 
-wt::wt() {
-
-}
-
-wt::~wt() {
-
-}
-
 double wt::calculate_sinr(int t_send_vue_id, int t_receive_vue_id, int t_pattern_idx, const std::set<int>& t_sending_vue_id_set) {
 	m_ploss = vue_physics::get_pl(t_send_vue_id, t_receive_vue_id);
-	int subcarrier_num = context::get_context()->get_rrm_config()->get_rb_num_per_pattern() * 12;
+	int subcarrier_num = ((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_rb_num_per_pattern() * 12;
 	m_pt = pow(10, (29 - 10 * log10(subcarrier_num * 15 * 1000)) / 10);
 	m_sigma = pow(10, -17.4);
 
@@ -93,7 +81,8 @@ double wt::calculate_sinr(int t_send_vue_id, int t_receive_vue_id, int t_pattern
 	int snr_index = closest(*m_qpsk_mi, ave_mi);
 	sinreff = 0.5*(snr_index - 40);
 
-	return sinreff;
+	//<Warn>当没有小尺度衰落时，各个子载波上的SINR都是一样的，故算术平均为每个子载波上的SINR
+	return sinr[0];
 }
 
 

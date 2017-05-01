@@ -8,25 +8,22 @@
 #include<random>
 #include<string>
 #include"route.h"
-#include"context.h"
 #include"config.h"
+#include"reflect/object.h"
+#include"reflect/context.h"
+
 
 enum route_response_state{
 	ACCEPT,
 	REJECT
 };
 
-enum route_transimit_state {
-	SUCCESS,
-	FAILURE
-};
-
 enum route_tcp_pattern_state {
-	TO_BE_SEND,//将要发送
-	SENDING,//发送状态
-	TO_BE_RECEIVE,//将要接收
-	RECEIVING,//接受状态
-	IDLE//空闲状态
+	IDLE = -3,//空闲状态
+	TO_BE_SEND = -2,//将要发送
+	TO_BE_RECEIVE = -1,//将要接收
+	SENDING = 1,//发送状态
+	RECEIVING = 2,//接受状态
 };
 
 
@@ -123,7 +120,7 @@ public:
 		m_event_id(s_event_count++), 
 		m_origin_source_node_id(t_source_node),
 		m_final_destination_node_id(t_destination_node),
-		m_package_num(context::get_context()->get_tmc_config()->get_package_num()){
+		m_package_num(((tmc_config*)context::get_context()->get_bean("tmc_config"))->get_package_num()){
 		set_current_node_id(t_source_node);
 	}
 
@@ -234,15 +231,12 @@ private:
 	static std::default_random_engine s_engine;
 
 	/*
-	* 日志输出流
-	*/
-	static std::ofstream s_logger;
-
-	/*
 	* 正在发送(强调一下:发状态的节点)的node节点
 	* 外层下标为pattern编号
 	*/
-	static std::vector<std::set<route_tcp_node*>> s_node_per_pattern;
+	static std::vector<std::set<int>> s_node_id_per_pattern;
+public:
+	static const std::set<int>& get_node_id_set(int t_pattern_idx);
 
 	/*
 	* 当前节点待发送车辆队列
@@ -267,12 +261,9 @@ public:
 
 private:
 	/*
-	* 发送ack请求时，会创建link_event，并将其添加到该结构中
-	* 并在下一tti进行传输
-	* 外层下标为pattern
-	* 仅用于该节点作为relay时(同时维护该链路source节点的m_pattern_state)
+	* 握手成功后，创建link_event，添加到relay节点的该结构中，用于下个tti传输
 	*/
-	std::vector<route_tcp_link_event*> m_tobe_link_transimit;
+	std::vector<route_tcp_link_event*> m_next_round_link_event;
 
 	/*
 	* 当前节点，当前时刻，每个pattern的使用情况
@@ -282,40 +273,37 @@ private:
 private:
 	std::vector<std::pair<route_tcp_pattern_state, route_tcp_link_event*>> m_pattern_state;
 
-private:
 	/*
-	* 发送response时，如果传输成功，将route_event添加到该结构
-	* 在下一刻刷新到m_send_event_queue中
-	* 外层下标为pattern
-	*/
-	std::vector<route_tcp_route_event*> m_tobe_relay;
-
-	/*
-	* 当前节点，每个频段上收到来自其他车辆的syn请求
+	* 当前节点，上个tti，每个频段上收到来自其他车辆的syn请求
 	*/
 private:
-	std::vector<std::vector<int>> m_syn_request_per_pattern;
+	std::vector<std::vector<int>> m_last_round_request_per_pattern;
 
 private:
 	/*
 	* 本次tti收到的syn请求，将于下个tti进行ack处理
 	*/
-	std::vector<std::vector<int>> m_tobe_syn_request_per_pattern;
+	std::vector<std::vector<int>> m_syn_request_per_pattern;
 public:
 	//添加syn请求
 	void add_syn_request(int t_pattern_idx, int t_source_node_id) {
-		m_tobe_syn_request_per_pattern[t_pattern_idx].push_back(t_source_node_id);
+		m_syn_request_per_pattern[t_pattern_idx].push_back(t_source_node_id);
 	}
 
 	/*
-	* 保存上一次请求的relay_node_id以及pattern_idx
-	* (-1,-1)则是无效状态
-	* 如果缓存不为空，说明该节点正在等待ack！！！
+	* (-1,-1)状态说明需要发送sync
+	* 在发送syn时，进行赋值，并且在被relay节点reject后重置，在传输完毕后重置
+	* 由于一个节点在同一个时刻只能发送一个事件，因此不用分pattern
 	*/
 private:
 	std::pair<int, int> m_select_cache;
 public:
-	void clear_select_cache() {
+	//是否已经发送syn，即syn是否有效
+	bool is_already_send_syn() {
+		return m_select_cache.first != -1 && m_select_cache.second != -1;
+	}
+	//重置syn状态
+	void reset_syn_state() {
 		m_select_cache.first = -1;
 		m_select_cache.second = -1;
 	}
@@ -360,11 +348,15 @@ public:
 	std::pair<int,int> select_relay_information();
 };
 
+class v2x_time;
+class gtt;
+class wt;
+class rrm_config;
+class tmc_config;
+class route_config;
+
 class route_tcp :public route {
-	/*
-	* 让context容器提供依赖注入
-	*/
-	friend class context;
+	REGISTE_MEMBER_HEAD(route_tcp)
 
 private:
 	/*
@@ -375,12 +367,26 @@ private:
 	/*
 	* 日志输出流
 	*/
-	static std::ofstream s_logger;
+	static std::ofstream s_logger_pattern;
+	static std::ofstream s_logger_link;
+	static std::ofstream s_logger_event;
 
-private:
-	static void log_event_trigger(int t_origin_node_id, int t_fianl_destination_node_id);
+	/*
+	* 记录日志
+	*/
+	static void log_node_pattern(int t_source_node_id, 
+		int t_relay_node_id, 
+		int t_cur_node_id, 
+		int t_pattern_idx, 
+		route_tcp_pattern_state t_from_pattern_state, 
+		route_tcp_pattern_state t_to_pattern_state, 
+		std::string t_description);
 
-	static void log_link_event_state(int t_source_node_id, int t_relay_node_id, std::string t_description);
+	static std::string pattern_state_to_string(route_tcp_pattern_state t_pattern_state);
+
+	static void log_event(int t_origin_node_id, int t_fianl_destination_node_id);
+
+	static void log_link(int t_source_node_id, int t_relay_node_id, std::string t_description);
 private:
 	/*
 	* 节点数组
@@ -411,26 +417,62 @@ public:
 		return m_failed_event_vec;
 	}
 
+private:
+	v2x_time* m_time;
+	gtt* m_gtt;
+	wt* m_wt;
+	rrm_config* m_rrm_config;
+	tmc_config* m_tmc_config;
+	route_config* m_route_config;
+
+	void set_time(object* t_time) {
+		m_time = (v2x_time*)t_time;
+	}
+	void set_gtt(object* t_gtt) {
+		m_gtt = (gtt*)t_gtt;
+	}
+	void set_wt(object* t_wt) {
+		m_wt = (wt*)t_wt;
+	}
+	void set_rrm_config(object* t_rrm_config) {
+		m_rrm_config = (rrm_config*)t_rrm_config;
+	}
+	void set_tmc_config(object* t_tmc_config) {
+		m_tmc_config = (tmc_config*)t_tmc_config;
+	}
+	void set_route_config(object* t_route_config) {
+		m_route_config = (route_config*)t_route_config;
+	}
 public:
-	/*
-	* 构造函数
-	*/
-	route_tcp();
+	v2x_time* get_time() override {
+		return m_time;
+	}
 
-	/*
-	* 初始化
-	*/
-	void initialize()override;
+	gtt* get_gtt() override {
+		return m_gtt;
+	}
 
-	/*
-	* 对整个网络层进行状态更新，对外暴露的接口，每个TTI调用一次即可
-	*/
-	void process_per_tti()override;
+	wt* get_wt() override {
+		return m_wt;
+	}
 
-	/*
-	* 随车辆运动而更新邻接列表，车辆刷新时调用即可
-	*/
-	void update_route_table_from_physics_level()override;
+	rrm_config* get_rrm_config() override {
+		return m_rrm_config;
+	}
+
+	tmc_config* get_tmc_config() override {
+		return m_tmc_config;
+	}
+
+	route_config* get_route_config() override {
+		return m_route_config;
+	}
+
+	void initialize() override;
+
+	void process_per_tti() override;
+
+	void update_route_table_from_physics_level() override;
 
 private:
 	/*

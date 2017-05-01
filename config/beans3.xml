@@ -1,0 +1,92 @@
+<bean id="global_control_config", class="global_control_config">
+	<property name="ntti", value="10"/>
+</bean>
+
+<bean id="gtt_highspeed_config", class="gtt_highspeed_config">
+	<property name="road_length", value="3464"/>
+	<property name="road_width", value="4.0"/>
+	<property name="speed", value="140"/>
+	<property name="freshtime", value="100"/>
+	
+	<dependency name="time", ref-id="time"/>
+</bean>
+
+<bean id="gtt_urban_config", class="gtt_urban_config">
+	<property name="road_length_ew", value="443"/>
+	<property name="road_length_sn", value="250"/>
+	<property name="road_width", value="7.0"/>
+	<property name="speed", value="30"/>
+	<property name="freshtime", value="500"/>
+	
+	<dependency name="time", ref-id="time"/>
+</bean>
+
+<bean id="rrm_config", class="rrm_config">
+	<property name="total_bandwidth", value="10"/>
+	<property name="rb_num_per_pattern", value="10"/>
+	<property name="drop_sinr_boundary", value="1.99"/>
+	<!--璧勬簮鍒嗛厤绠楁硶
+		1:base
+		2:based on sensing
+		3:base on sensing classical
+		4:sensing
+	-->
+	<property name="select_altorithm", value="1"/>
+	<property name="time_division_granularity", value="1"/>
+	
+	<pre-processor method_name="set_pattern_num"/>
+</bean>
+
+
+<bean id="tmc_config", class="tmc_config">
+	<property name="package_num", value="4"/>
+	<property name="hello_tti", value="1"/>
+	<property name="trigger_rate", value="0.001"/>
+</bean>
+
+
+<bean id="route_config", class="route_config">
+	<property name="interval", value="1000"/>
+</bean>
+
+<bean id="time", class="v2x_time">
+	<property name="tti", value="0"/>
+</bean>
+
+<bean id="system_control", class="system_control">
+	<dependency name="time", ref-id="time"/>
+	<dependency name="gtt", ref-id="gtt"/>
+	<dependency name="route", ref-id="route"/>
+	<dependency name="tmc", ref-id="tmc"/>
+	<dependency name="wt", ref-id="wt"/>
+	<dependency name="global_control_config", ref-id="global_control_config"/>
+</bean>
+
+<bean id="gtt", class="gtt_urban">	
+	<dependency name="config", ref-id="gtt_urban_config"/>
+	<dependency name="time", ref-id="time"/>
+	<dependency name="rrm_config", ref-id="rrm_config"/>
+	<post-processor method_name="initialize"/>
+</bean>
+
+<bean id="route", class="route_udp">	
+	<dependency name="time", ref-id="time"/>
+	<dependency name="gtt", ref-id="gtt"/>
+	<dependency name="wt", ref-id="wt"/>
+	<dependency name="rrm_config", ref-id="rrm_config"/>
+	<dependency name="tmc_config", ref-id="tmc_config"/>
+	<dependency name="route_config", ref-id="route_config"/>
+	<post-processor method_name="initialize"/>
+</bean>
+
+<bean id="tmc", class="tmc">	
+	
+</bean>
+
+<bean id="wt", class="wt">	
+	<post-processor method_name="set_resource"/>
+</bean>
+
+
+
+
