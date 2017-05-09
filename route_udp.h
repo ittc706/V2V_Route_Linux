@@ -410,6 +410,7 @@ private:
 	static std::ofstream s_logger_pattern;
 	static std::ofstream s_logger_link;
 	static std::ofstream s_logger_event;
+	static std::ofstream s_logger_link_pdr_distance;
 
 	/*
 	* 记录日志

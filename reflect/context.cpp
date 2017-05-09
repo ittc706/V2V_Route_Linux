@@ -28,11 +28,11 @@ context* context::get_context() {
 void context::init() {
 	parse_configuration();
 
-	create_and_init_bean();
+	init_bean();
+
+	property_injection();
 
 	pre_process();
-
-	dependency_injection();
 
 	post_process();
 }
@@ -41,7 +41,7 @@ void context::parse_configuration() {
 	bean_definitions = loader->load();
 }
 
-void context::create_and_init_bean() {
+void context::init_bean() {
 	for (bean_definition* definition : bean_definitions) {
 		string bean_id = definition->id;
 		string class_type = definition->class_type;
@@ -52,20 +52,24 @@ void context::create_and_init_bean() {
 			exit(0);
 		}
 		assert(bean_map.insert({ bean_id ,_obj }).second);
-		for (bean_property p : definition->properties) {
-			invoke(_obj, "set_" + p.name, p.value);
-		}
 	}
 }
 
-void context::dependency_injection() {
+void context::property_injection() {
 	for (bean_definition* definition : bean_definitions) {
 		string bean_id = definition->id;
 		assert(bean_map.find(bean_id) != bean_map.end());
-		for (bean_dependency dependency : definition->dependencies) {
-			string dependency_bean_id = dependency.ref_id;
-			assert(bean_map.find(dependency_bean_id) != bean_map.end());
-			invoke(bean_map[bean_id], "set_" + dependency.name, bean_map[dependency_bean_id]);
+		object* _obj = bean_map[bean_id];
+
+		for (bean_property p : definition->properties) {
+			if (p.is_bean) {
+				assert(bean_map.find(p.value) != bean_map.end());
+				object* other_bean = bean_map[p.value];
+				invoke(_obj, "set_" + p.name, other_bean);
+			}
+			else {
+				invoke(_obj, "set_" + p.name, p.value);
+			}
 		}
 	}
 }

@@ -24,7 +24,6 @@ std::string bean_dependency::to_string(int n) {
 	}
 	stringstream ss;
 	ss << space << "[" << endl;
-	ss << space << "    name: " << name << endl;
 	ss << space << "    ref-id: " << ref_id << endl;
 	ss << space << "]," << endl;
 	return ss.str();

@@ -54,12 +54,12 @@ private:
 	/*
 	* 按照指定顺序初始化所有bean
 	*/
-	void create_and_init_bean();
+	void init_bean();
 
 	/*
-	* 依赖注入
+	* 属性注入，包括一般属性以及bean属性
 	*/
-	void dependency_injection();
+	void property_injection();
 
 	/*
 	* 预处理器

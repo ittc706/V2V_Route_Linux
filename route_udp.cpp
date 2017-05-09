@@ -35,7 +35,7 @@ void route_udp_link_event::transimit() {
 		m_is_finished = true;
 	}
 
-	if (get_pattern_idx() < 0 || get_pattern_idx() > 4) throw logic_error("error");
+	if (get_pattern_idx() < 0 || get_pattern_idx() > 5) throw logic_error("error");
 	double sinr = ((wt*)context::get_context()->get_bean("wt"))->calculate_sinr(
 		get_source_node_id(),
 		get_destination_node_id(),
@@ -61,7 +61,7 @@ const std::set<int>& route_udp_node::get_node_id_set(int t_pattern_idx) {
 
 route_udp_node::route_udp_node() {
 	m_pattern_state = vector<pair<route_udp_pattern_state,int>>(
-		((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_pattern_num(),
+		((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_pattern_num()+1,
 		pair<route_udp_pattern_state,int>(IDLE_UDP,0)
 		);
 
@@ -98,20 +98,13 @@ pair<int, int> route_udp_node::select_relay_information() {
 		}
 	}
 	
-	//挑选频段，如果是发送Hello包，则在未占用的频段上随机选择，如果是发送数据包，则选择上次发送Hello包所使用的频段
-	if (final_destination_node_id != -1 && res.first != -1) {
-		int count = 0;
-		while (m_adjacent_list[count].first != res.first)
-		{
-			count++;
-		}
-		if (m_pattern_state[m_adjacent_list[count].second.pattern_id].first == IDLE_UDP) {
-			res.second = m_adjacent_list[count].second.pattern_id;
-		}
+	//挑选频段，如果是发送Hello包，则在信令专用pattern上发送(）最后一个pattern，如果是发送数据包，未占用的频段上随机选择。
+	if (final_destination_node_id == -1) {
+		res.second = m_pattern_state.size()-1;
 	}
-	else {
+	else if (res.first != -1) {
 		vector<int> candidate;
-		for (int pattern_idx = 0; pattern_idx < m_pattern_state.size(); pattern_idx++) {
+		for (int pattern_idx = 0; pattern_idx < m_pattern_state.size()-1; pattern_idx++) {
 			if (m_pattern_state[pattern_idx].first == IDLE_UDP) {
 				candidate.push_back(pattern_idx);
 			}
@@ -131,6 +124,7 @@ pair<int, int> route_udp_node::select_relay_information() {
 ofstream route_udp::s_logger_pattern;
 ofstream route_udp::s_logger_link;
 ofstream route_udp::s_logger_event;
+ofstream route_udp::s_logger_link_pdr_distance;
 
 void route_udp::log_node_pattern(int t_source_node_id,
 	int t_relay_node_id,
@@ -173,7 +167,7 @@ void route_udp::log_event(int t_origin_node_id, int t_fianl_destination_node_id)
 void route_udp::log_link(int t_source_node_id, int t_relay_node_id, std::string t_description,std::string t_loss_reason,adjacent_message last_time,adjacent_message current_time) {
 	string lost_reason1 = "干扰";
 	string lost_reason2 = "连接性不好";
-	bool lost_reason = false;
+	double last_sinr = 0;
 	
 	v2x_time* __time = (v2x_time*)context::get_context()->get_bean("time");
 	vue* vue_array = ((gtt*)context::get_context()->get_bean("gtt"))->get_vue_array();
@@ -199,6 +193,7 @@ void route_udp::log_link(int t_source_node_id, int t_relay_node_id, std::string 
 		vector<double>::iterator it1 = last_time.sinr.begin();
 		while (it1 != last_time.sinr.end()) {
 			s_logger_link << *it1 << ",";
+			last_sinr = *it1;
 			it1++;
 		}
 		s_logger_link << "PL:" << -10*log10(last_time.pl);
@@ -212,7 +207,6 @@ void route_udp::log_link(int t_source_node_id, int t_relay_node_id, std::string 
 		{
 			s_logger_link << *__it << "(" << vue_array[*__it].get_physics_level()->m_absx << "," << vue_array[*__it].get_physics_level()->m_absy << "),";
 			s_logger_link << "PL:" << -10*log10(vue_physics::get_pl(*__it, t_relay_node_id)) << ",";
-			if (-10 * log10(vue_physics::get_pl(*__it, t_relay_node_id)) < -10 * log10(current_time.pl)) lost_reason = true;
 			__it++;
 		}
 		s_logger_link << "};";
@@ -233,7 +227,7 @@ void route_udp::log_link(int t_source_node_id, int t_relay_node_id, std::string 
 		s_logger_link << "车辆卷绕，已运动出范围" << endl << endl;
 	}
 	else {
-		if (lost_reason == true) s_logger_link << lost_reason1;
+		if ((last_sinr - (-10 * log10(current_time.pl) - (-10 * log10(last_time.pl))))>((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_drop_sinr_boundary()) s_logger_link << lost_reason1;
 		else s_logger_link << lost_reason2;
 		s_logger_link << endl;
 	}
@@ -247,8 +241,9 @@ void route_udp::initialize() {
 	s_logger_pattern.open("log/route_udp_pattern_log.txt");
 	s_logger_link.open("log/route_udp_link_log.txt");
 	s_logger_event.open("log/route_udp_event_log.txt");
+	s_logger_link_pdr_distance.open("log/route_udp_link_pdr_distance.txt");
 
-	route_udp_node::s_node_id_per_pattern = vector<set<int>>(get_rrm_config()->get_pattern_num());
+	route_udp_node::s_node_id_per_pattern = vector<set<int>>(get_rrm_config()->get_pattern_num()+1);
 }
 
 void route_udp::process_per_tti() {
@@ -407,18 +402,13 @@ void route_udp::start_sending_data() {
 				//选择频段
 				pair<int, int> select_res = source_node.select_relay_information();
 
-				//如果暂时没有可用频段，推迟到下一个TTI再尝试发送
-				if (select_res.second == -1) {
-					continue;
-				}
-
 				//对选择要传输的空闲频段先进行占用
 				source_node.m_pattern_state[select_res.second].first = SENDING_UDP;
 				if (source_node.m_pattern_state[select_res.second].second != 0) throw logic_error("error");
 
 				//维护干扰列表
 				if (route_udp_node::s_node_id_per_pattern[select_res.second].find(source_node_id) != route_udp_node::s_node_id_per_pattern[select_res.second].end()) throw logic_error("error");
-				if (select_res.second < 0 || select_res.second > 4) throw logic_error("error");
+				if (select_res.second < 0 || select_res.second > 5) throw logic_error("error");
 				route_udp_node::s_node_id_per_pattern[select_res.second].insert(source_node_id);
 
 				//对除了该节点以外的其他节点创建链路事件
@@ -450,7 +440,7 @@ void route_udp::transmit_data() {
 			//取出当前事件所占用的pattern编号
 			int pattern_idx = (*it)->m_pattern_idx;
 
-			if (pattern_idx < 0 || pattern_idx > 4) throw logic_error("error");
+			if (pattern_idx < 0 || pattern_idx > 5) throw logic_error("error");
 
 			//如果传输所用频段正被接收节点用于发送则事件传输失败
 			if (destination_node.m_pattern_state[pattern_idx].first == SENDING_UDP) {
@@ -522,7 +512,7 @@ void route_udp::transmit_data() {
 				//所有link_event处理完毕后，维护干扰列表
 				if (it == source_node.sending_link_event.end() - 1){
 					if (route_udp_node::s_node_id_per_pattern[pattern_idx].find(source_node_id) == route_udp_node::s_node_id_per_pattern[pattern_idx].end()) throw logic_error("error");
-					if (pattern_idx < 0 || pattern_idx > 4) throw logic_error("error");
+					if (pattern_idx < 0 || pattern_idx > 5) throw logic_error("error");
 					route_udp_node::s_node_id_per_pattern[pattern_idx].erase(source_node_id);
 				}
 
@@ -551,6 +541,8 @@ void route_udp::transmit_data() {
 							temp.pl = vue_physics::get_pl(source_node_id, destination_node.get_id());
 
 							log_link(source_node_id, (*it)->get_destination_node_id(), "FAILED", loss_reason, source_node.m_adjacent_list[count].second, temp);
+
+							s_logger_link_pdr_distance << 0 << "," << vue_physics::get_distance(source_node_id, destination_node.get_id()) << endl;
 
 							if (abs(source_node.m_adjacent_list[count].second.send_node_x - temp.send_node_x) < 50 && abs(source_node.m_adjacent_list[count].second.send_node_y - temp.send_node_y) < 50 &&
 								abs(source_node.m_adjacent_list[count].second.receive_node_x - temp.receive_node_x) < 50 && abs(source_node.m_adjacent_list[count].second.receive_node_y - temp.receive_node_y) < 50)//将卷绕的车辆排除在外
@@ -591,6 +583,8 @@ void route_udp::transmit_data() {
 						if (source_node.m_send_event_queue.front()->get_final_destination_node_id() == destination_node.get_id()) {
 
 							//OP1:记录route_event传送成功,并且永久保存到列表里
+
+							s_logger_link_pdr_distance << 1 << "," << vue_physics::get_distance(source_node_id, destination_node.get_id()) << endl;
 
 							if (vue_physics::get_distance(source_node.m_send_event_queue.front()->get_origin_source_node_id(), destination_node.get_id()) < 500) {
 								//add_successful_route_event(source_node.poll_send_event_queue());

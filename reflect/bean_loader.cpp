@@ -65,21 +65,30 @@ bean_definition* bean_loader::create_bean_definition(const std::string s) {
 }
 
 void bean_loader::add_property(bean_definition* definition, const std::string s) {
-	const regex REGEX("<property +name *= *\"([^\"]+)\" *, *value *= *\"([^\"]+)\" */>");
-	for (sregex_iterator it(s.begin(), s.end(), REGEX), eof; it != eof; ++it) {
+	const regex REGEX_NOT_BEAN("<property +name *= *\"([^\"]+)\" *, *value *= *\"([^\"]+)\" */>");
+	for (sregex_iterator it(s.begin(), s.end(), REGEX_NOT_BEAN), eof; it != eof; ++it) {
 		definition->properties.push_back(bean_property(
 			it->operator[](1),
-			it->operator[](2)
+			it->operator[](2),
+			false
+			));
+	}
+
+	const regex REGEX_BEAN("<property +name *= *\"([^\"]+)\" *, *ref-id *= *\"([^\"]+)\" */>");
+	for (sregex_iterator it(s.begin(), s.end(), REGEX_BEAN), eof; it != eof; ++it) {
+		definition->properties.push_back(bean_property(
+			it->operator[](1),
+			it->operator[](2),
+			true
 			));
 	}
 }
 
 void bean_loader::add_dependency(bean_definition* definition, const std::string s) {
-	const regex REGEX("<dependency +name *= *\"([^\"]+)\" *, *ref-id *= *\"([^\"]+)\" */>");
+	const regex REGEX("<dependency +ref-id *= *\"([^\"]+)\" */>");
 	for (sregex_iterator it(s.begin(), s.end(), REGEX), eof; it != eof; ++it) {
 		definition->dependencies.push_back(bean_dependency(
-			it->operator[](1),
-			it->operator[](2)
+			it->operator[](1)
 			));
 	}
 }
@@ -124,9 +133,11 @@ void bean_loader::order_by_dependency(std::vector<bean_definition*>& definitions
 		assert(degree_map.insert({ bean_id,definition->dependencies.size() }).second);
 	}
 	queue<string> queue;
+	int cnt = 0;
 	for (pair<string, int> key_value: degree_map){
 		if (key_value.second == 0) {
 			queue.push(key_value.first);
+			cnt++;
 		}
 	}
 	vector<bean_definition*> temp;
@@ -140,8 +151,14 @@ void bean_loader::order_by_dependency(std::vector<bean_definition*>& definitions
 		for (string other_bean_id : adj_list) {
 			if (--degree_map[other_bean_id] == 0) {
 				queue.push(other_bean_id);
+				cnt++;
 			}
 		}
+	}
+	if (cnt != definitions.size()) {
+		cout << "当前依赖关系导致有向图无法遍历，请重新确定bean依赖关系" << endl;
+		system("pause");
+		exit(0);
 	}
 	definitions.swap(temp);
 }

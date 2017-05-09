@@ -49,4 +49,4 @@ git add .
 
 git commit -m ${description:3}
 
-git push origin master:master
+git push -f origin master:master
