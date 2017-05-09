@@ -125,6 +125,7 @@ ofstream route_udp::s_logger_pattern;
 ofstream route_udp::s_logger_link;
 ofstream route_udp::s_logger_event;
 ofstream route_udp::s_logger_link_pdr_distance;
+ofstream route_udp::s_logger_delay;
 
 void route_udp::log_node_pattern(int t_source_node_id,
 	int t_relay_node_id,
@@ -242,6 +243,7 @@ void route_udp::initialize() {
 	s_logger_link.open("log/route_udp_link_log.txt");
 	s_logger_event.open("log/route_udp_event_log.txt");
 	s_logger_link_pdr_distance.open("log/route_udp_link_pdr_distance.txt");
+	s_logger_delay.open("log/route_udp_delay.txt");
 
 	route_udp_node::s_node_id_per_pattern = vector<set<int>>(get_rrm_config()->get_pattern_num()+1);
 }
@@ -319,7 +321,7 @@ void route_udp::event_trigger() {
 		//判断是否到该发送hello包的时间
 		if (source_node.m_tti_next_hello == get_time()->get_tti()) {
 			get_node_array()[origin_source_node_id].offer_send_event_queue(
-				new route_udp_route_event(origin_source_node_id, -1, HEllO)
+				new route_udp_route_event(origin_source_node_id, -1, HEllO,get_time()->get_tti())
 			);
 
 			//给定下一次发送hello包的时间
@@ -337,7 +339,7 @@ void route_udp::event_trigger() {
 					final_destination_node_id = u_node_id(s_engine);
 				}
 				get_node_array()[origin_source_node_id].offer_send_event_queue(
-					new route_udp_route_event(origin_source_node_id, final_destination_node_id, DATA)
+					new route_udp_route_event(origin_source_node_id, final_destination_node_id, DATA,get_time()->get_tti())
 				);
 				log_event(origin_source_node_id, final_destination_node_id);
 			}
@@ -586,6 +588,10 @@ void route_udp::transmit_data() {
 
 							s_logger_link_pdr_distance << 1 << "," << vue_physics::get_distance(source_node_id, destination_node.get_id()) << endl;
 
+							int now_tti = get_time()->get_tti();
+
+							int delay = get_time()->get_tti() - source_node.m_send_event_queue.front()->get_start_tti();
+							s_logger_delay << delay << endl;
 							if (vue_physics::get_distance(source_node.m_send_event_queue.front()->get_origin_source_node_id(), destination_node.get_id()) < 500) {
 								//add_successful_route_event(source_node.poll_send_event_queue());
 								m_success_route_event_num++;

@@ -1,0 +1,17 @@
+clear all;
+close all;
+clc;
+
+[data1] = textread('route_udp_delay.txt','%n');
+data1=data1+1;
+y=0:1:20;
+[number,center]=hist(data1,y);
+bar(center,number)
+
+
+[numberPeriod,centerPeriod]=hist(PeriodSendDelay,min(PeriodSendDelay)-1:max(PeriodSendDelay)+1);
+numberPeriod=numberPeriod./sum(numberPeriod);
+
+figure(figId)
+figId=figId+1;
+bar(centerPeriod,numberPeriod);

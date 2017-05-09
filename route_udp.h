@@ -51,6 +51,17 @@ struct adjacent_message {
 class route_udp_node;
 
 class route_udp_route_event {
+	/*
+	* 事件存在的起始时间
+	*/
+private:
+	int m_start_tti = 0;
+
+public:
+	int get_start_tti() {
+		return m_start_tti;
+	}
+
 private:
 	static int s_event_count;
 
@@ -148,12 +159,13 @@ public:
 	/*
 	* 构造函数，提供给事件触发模块调用
 	*/
-	route_udp_route_event(int t_source_node, int t_destination_node,route_udp_route_event_type t_route_event_type) :
+	route_udp_route_event(int t_source_node, int t_destination_node,route_udp_route_event_type t_route_event_type,int current_tti) :
 		m_route_event_type(t_route_event_type),
 		m_event_id(s_event_count++),
 		m_origin_source_node_id(t_source_node),
 		m_final_destination_node_id(t_destination_node),
 		m_hello_tti_num(((tmc_config*)context::get_context()->get_bean("tmc_config"))->get_hello_tti()),
+		m_start_tti(current_tti),
 		m_tti_num(((tmc_config*)context::get_context()->get_bean("tmc_config"))->get_package_num()) {
 		set_current_node_id(t_source_node);
 	}
@@ -411,7 +423,7 @@ private:
 	static std::ofstream s_logger_link;
 	static std::ofstream s_logger_event;
 	static std::ofstream s_logger_link_pdr_distance;
-
+	static std::ofstream s_logger_delay;
 	/*
 	* 记录日志
 	*/
