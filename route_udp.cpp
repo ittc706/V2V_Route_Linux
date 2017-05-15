@@ -85,7 +85,8 @@ pair<int, int> route_udp_node::select_relay_information() {
 		for (auto p : m_adjacent_list) {
 			int near_node_id = p.first;
 			double cur_distance = vue_physics::get_distance(near_node_id, final_destination_node_id);
-			if (cur_distance < min_distance) {
+			double s_distance = vue_physics::get_distance(near_node_id, get_id());
+			if (cur_distance < min_distance && s_distance<250) {
 				min_distance = cur_distance;
 				res.first = near_node_id;
 			}
