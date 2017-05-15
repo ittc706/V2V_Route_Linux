@@ -85,8 +85,7 @@ pair<int, int> route_udp_node::select_relay_information() {
 		for (auto p : m_adjacent_list) {
 			int near_node_id = p.first;
 			double cur_distance = vue_physics::get_distance(near_node_id, final_destination_node_id);
-			double s_distance = vue_physics::get_distance(near_node_id, get_id());
-			if (cur_distance < min_distance && s_distance<250) {
+			if (cur_distance < min_distance) {
 				min_distance = cur_distance;
 				res.first = near_node_id;
 			}
@@ -583,11 +582,11 @@ void route_udp::transmit_data() {
 
 						source_node.m_send_event_queue.front()->set_current_node_id((*it)->get_destination_node_id());
 
+						s_logger_link_pdr_distance << 1 << "," << vue_physics::get_distance(source_node_id, destination_node.get_id()) << endl;
+
 						if (source_node.m_send_event_queue.front()->get_final_destination_node_id() == destination_node.get_id()) {
 
 							//OP1:记录route_event传送成功,并且永久保存到列表里
-
-							s_logger_link_pdr_distance << 1 << "," << vue_physics::get_distance(source_node_id, destination_node.get_id()) << endl;
 
 							int now_tti = get_time()->get_tti();
 
