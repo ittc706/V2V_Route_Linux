@@ -27,6 +27,7 @@
 #include"route_udp.h"
 #include"reflect/context.h"
 
+
 using namespace std;
 
 void tmc::statistic() {
@@ -58,4 +59,14 @@ void tmc::statistic() {
 	}
 	
 	success_route_event << endl;
+
+	ofstream last_location;
+	last_location.open("log/last_location.txt");
+	for (int i = 0; i < vue_physics::get_vue_num(); i++) {
+		gtt* __gtt = (gtt*)context::get_context()->get_bean("gtt");
+		last_location << __gtt->get_vue_array()[i].get_physics_level()->get_absx() << " ";
+		last_location << __gtt->get_vue_array()[i].get_physics_level()->get_absy() << " ";
+		last_location << endl;
+	}
+
 }

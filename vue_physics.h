@@ -107,7 +107,10 @@ public:
 	*/
 private:
 	double m_speed = 0;
-
+public:
+	double get_speed() {
+		return m_speed;
+	}
 	/*
 	* 速度方向,0代表向东，180代表向西,90代表向北，-90代表向南
 	*/
@@ -119,13 +122,19 @@ private:
 	*/
 private:
 	double m_absx = 0;
-
+public:
+	double get_absx() {
+		return m_absx;
+	}
 	/*
 	* 绝对纵坐标，单位m
 	*/
 private:
 	double m_absy = 0;
-
+public:
+	double get_absy() {
+		return m_absy;
+	}
 	/*
 	*相对横坐标，单位m
 	*/
