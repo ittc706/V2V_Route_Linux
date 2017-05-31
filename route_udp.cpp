@@ -29,13 +29,14 @@ std::string route_udp_route_event::to_string() {
 }
 
 void route_udp_link_event::transimit() {
-	//<Warn>:一跳就在指定频段传输，不再分成多个包分别选择频段传输了
+	//<Warn>:一跳就在指定频段传输，不再分成多个包分别选择频段传输了,Hello包与数据包频分
+	int total_pattern_num = ((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_pattern_num() + 1;
 
 	if (++m_tti_idx == m_tti_num) {
 		m_is_finished = true;
 	}
 
-	if (get_pattern_idx() < 0 || get_pattern_idx() > 5) throw logic_error("error");
+	if (get_pattern_idx() < 0 || get_pattern_idx() > total_pattern_num - 1) throw logic_error("error");
 	double sinr = ((wt*)context::get_context()->get_bean("wt"))->calculate_sinr(
 		get_source_node_id(),
 		get_destination_node_id(),
@@ -61,7 +62,7 @@ const std::set<int>& route_udp_node::get_node_id_set(int t_pattern_idx) {
 
 route_udp_node::route_udp_node() {
 	m_pattern_state = vector<pair<route_udp_pattern_state,int>>(
-		((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_pattern_num()+1,
+		((rrm_config*)context::get_context()->get_bean("rrm_config"))->get_pattern_num(),//Hello包与数据包频分
 		pair<route_udp_pattern_state,int>(IDLE_UDP,0)
 		);
 
@@ -245,7 +246,7 @@ void route_udp::initialize() {
 	s_logger_link_pdr_distance.open("log/route_udp_link_pdr_distance.txt");
 	s_logger_delay.open("log/route_udp_delay.txt");
 
-	route_udp_node::s_node_id_per_pattern = vector<set<int>>(get_rrm_config()->get_pattern_num()+1);
+	route_udp_node::s_node_id_per_pattern = vector<set<int>>(get_rrm_config()->get_pattern_num()+1);//Hello包与数据包频分
 }
 
 void route_udp::process_per_tti() {

@@ -23,7 +23,7 @@
 
 <bean id="rrm_config", class="rrm_config">
 	<property name="total_bandwidth", value="10"/>
-	<property name="rb_num_per_pattern", value="10"/>
+	<property name="rb_num_per_pattern", value="12"/>
 	<property name="drop_sinr_boundary", value="1.99"/>
 	<!--资源分配算法
 		1:base

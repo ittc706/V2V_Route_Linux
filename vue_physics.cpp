@@ -238,6 +238,16 @@ void vue_physics::update_location_urban() {
 	m_absx = p->get_config()->get_road_topo_ratio()[m_road_id * 2 + 0] * (p->get_config()->get_road_length_sn() + 2 * p->get_config()->get_road_width()) + m_relx;
 	m_absy = p->get_config()->get_road_topo_ratio()[m_road_id * 2 + 1] * (p->get_config()->get_road_length_ew() + 2 * p->get_config()->get_road_width()) + m_rely;
 
+	//更新zone_id
+	if (m_vangle == 0 || m_vangle == 180) {
+		if (m_relx >= 0) m_zone_id = 2;
+		else m_zone_id = 0;
+	}
+	else {
+		if (m_rely >= 0) m_zone_id = 3;
+		else m_zone_id = 1;
+	}
+
 }
 void vue_physics::set_superior_level(vue* t_superior_level) {
 	m_superior_level = t_superior_level;

@@ -103,6 +103,16 @@ public:
 	int get_vue_id();
 
 	/*
+	* 车辆区域id,用于资源分配
+	*/
+private:
+	int m_zone_id;
+public:
+	int get_zone_id() {
+		return m_zone_id;
+	}
+
+	/*
 	* 车速，m/s
 	*/
 private:
