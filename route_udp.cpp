@@ -104,21 +104,26 @@ pair<int, int> route_udp_node::select_relay_information() {
 		res.second = m_pattern_state.size()-1;
 	}
 	else if (res.first != -1) {
-		vector<int> candidate;
-		for (int pattern_idx = 0; pattern_idx < m_pattern_state.size()-1; pattern_idx++) {
-			if (m_pattern_state[pattern_idx].first == IDLE_UDP) {
-				candidate.push_back(pattern_idx);
-			}
-		}
+		//vector<int> candidate;
+		//for (int pattern_idx = 0; pattern_idx < m_pattern_state.size()-1; pattern_idx++) {
+		//	if (m_pattern_state[pattern_idx].first == IDLE_UDP) {
+		//		candidate.push_back(pattern_idx);
+		//	}
+		//}
 
-		if (candidate.size() != 0) {
-			//在未占用的频段上随机挑选一个
-			//<Warn>可以增加其他算法
-			uniform_int_distribution<int> u(0, static_cast<int>(candidate.size()) - 1);
-			res.second = candidate[u(s_engine)];
+		//if (candidate.size() != 0) {
+		//	//在未占用的频段上随机挑选一个
+		//	//<Warn>可以增加其他算法
+		//	uniform_int_distribution<int> u(0, static_cast<int>(candidate.size()) - 1);
+		//	res.second = candidate[u(s_engine)];
+		//}
+
+		context* __context = context::get_context();
+		int pattern_idx = ((gtt*)__context->get_bean("gtt"))->get_vue_array()[get_id()].get_physics_level()->get_zone_id();
+		if (m_pattern_state[pattern_idx].first == IDLE_UDP) {
+			res.second = pattern_idx;
 		}
 	}
-
 	return res;
 }
 

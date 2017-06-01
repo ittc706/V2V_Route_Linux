@@ -1,0 +1,761 @@
+TTI[1016] - link[6  , 205] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{205(801.229,10),};Send:（766.229,10）,Receive:（960.68,-10）;Sinr:25.6417,PL:112.491
+Pattern Id:0;Infer_Set:{8(764.837,-10),PL:85.9656,};Send:（801.229,10）,Receive:（995.68,-10）Sinr:27.6274,27.6828,27.6828,-26.0071,PL:111.973
+干扰
+TTI[1390] - link[25 , 63 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{63(-886.945,-6),};Send:（-918.056,-6）,Receive:（-549.155,-10）;Sinr:17.1463,PL:122.509
+Pattern Id:0;Infer_Set:{147(-856.535,2),PL:79.8102,};Send:（-886.945,-6）,Receive:（-518.044,-10）Sinr:-34.1541,-34.1541,-34.1541,-34.1541,PL:113.964
+干扰
+TTI[1461] - link[178, 102] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{102(-1285.14,-2),};Send:（-1292.92,-2）,Receive:（-884.743,6）;Sinr:8.48509,PL:131.17
+Pattern Id:0;Infer_Set:{91(-141.288,-2),PL:140.308,107(-1673.67,-2),PL:124.246,};Send:（-1285.14,-2）,Receive:（-876.965,6）Sinr:17.5349,2.00265,1.89933,1.89933,PL:122.121
+干扰
+TTI[1473] - link[200, 198] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{198(1448.27,10),};Send:（1401.61,10）,Receive:（1104.17,10）;Sinr:20.0686,PL:119.587
+Pattern Id:0;Infer_Set:{152(-1056.5,2),PL:155.051,};Send:（1448.27,10）,Receive:（1150.84,10）Sinr:-41.9762,-41.9762,-41.9762,20.3878,PL:119.144
+干扰
+TTI[1478] - link[70 , 182] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{182(-1190.72,6),};Send:（-1225.72,6）,Receive:（-1484.14,-6）;Sinr:23.6282,PL:116.027
+Pattern Id:0;Infer_Set:{41(1566.85,-6),PL:160.961,};Send:（-1190.72,6）,Receive:（-1449.14,-6）Sinr:-12.8996,-0.694186,-0.694186,-0.690455,PL:115.622
+干扰
+TTI[1734] - link[146, 136] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{136(-226.045,2),};Send:（-280.489,2）,Receive:（-768.904,2）;Sinr:13.5093,PL:126.146
+Pattern Id:0;Infer_Set:{213(43.1103,10),PL:123.199,};Send:（-226.045,2）,Receive:（-714.459,2）Sinr:-5.00041,-5.00041,-5.00041,-5.00041,PL:128.102
+车辆卷绕，已运动出范围
+
+TTI[1768] - link[208, 10 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{10(416.232,-10),};Send:（392.899,-10）,Receive:（240.526,10）;Sinr:31.0665,PL:108.589
+Pattern Id:0;Infer_Set:{92(-464.777,-2),PL:140.61,};Send:（416.232,-10）,Receive:（263.86,10）Sinr:-7.5003,22.1987,21.7702,28.5275,PL:108.569
+干扰
+TTI[1919] - link[174, 132] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{132(144.845,2),};Send:（102.067,2）,Receive:（-393.63,6）;Sinr:7.62476,PL:132.031
+Pattern Id:0;Infer_Set:{11(341.44,-10),PL:108.873,130(276.995,2),PL:97.5275,};Send:（144.845,2）,Receive:（-350.853,6）Sinr:10.9696,10.9696,-29.91,-30.2174,PL:127.437
+干扰
+TTI[1921] - link[130, 169] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{169(391.5,6),};Send:（375.945,6）,Receive:（261.44,2）;Sinr:41.6922,PL:97.9633
+Pattern Id:0;Infer_Set:{11(341.44,-10),PL:94.7675,};Send:（391.5,6）,Receive:（276.995,2）Sinr:28.4438,-10.7369,-10.7366,-10.7366,PL:105.504
+干扰
+TTI[1936] - link[153, 31 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{31(-1405.41,-10),};Send:（-1420.96,-10）,Receive:（-1194.19,2）;Sinr:11.7649,PL:119.12
+Pattern Id:0;Infer_Set:{33(-1610.8,-10),PL:114.311,};Send:（-1405.41,-10）,Receive:（-1178.64,2）Sinr:24.7407,24.7407,-0.61678,-0.61678,PL:114.915
+干扰
+TTI[1938] - link[33 , 181] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{181(-1128.43,6),};Send:（-1159.54,6）,Receive:（-1641.91,-10）;Sinr:11.9876,PL:127.668
+Pattern Id:0;Infer_Set:{};Send:（-1128.43,6）,Receive:（-1610.8,-10）Sinr:-44.5215,-44.5215,8.63447,8.63447,PL:131.021
+干扰
+TTI[2066] - link[104, 72 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{72(-1521.63,-6),};Send:（-1521.63,-6）,Receive:（-1408.49,-2）;Sinr:32.2328,PL:107.423
+Pattern Id:0;Infer_Set:{44(890.846,-6),PL:155.191,225(-1494.26,10),PL:79.6808,};Send:（-1521.63,-6）,Receive:（-1408.49,-2）Sinr:-27.7419,-27.7419,-27.7419,-27.7419,PL:107.423
+干扰
+TTI[2116] - link[169, 90 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{90(-64.8398,-2),};Send:（-99.8398,-2）,Receive:（364.278,6）;Sinr:13.8259,PL:125.83
+Pattern Id:0;Infer_Set:{118(1131.36,2),PL:145.621,};Send:（-64.8398,-2）,Receive:（399.278,6）Sinr:-27.9801,-27.9801,-27.9801,12.8092,PL:125.866
+干扰
+TTI[2127] - link[98 , 69 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{69(-1407.51,-6),};Send:（-1426.96,-6）,Receive:（-1044.14,-2）;Sinr:21.521,PL:118.134
+Pattern Id:0;Infer_Set:{107(-1646.44,-2),PL:113.319,202(1140.33,10),PL:153.541,};Send:（-1407.51,-6）,Receive:（-1024.69,-2）Sinr:15.0491,-10.656,-10.656,-10.6548,PL:123.963
+干扰
+TTI[2154] - link[135, 212] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{212(62.0348,10),};Send:（30.9237,10）,Receive:（-135.788,2）;Sinr:33.9782,PL:105.677
+Pattern Id:0;Infer_Set:{90(-64.8398,-2),PL:100.793,};Send:（62.0348,10）,Receive:（-104.677,2）Sinr:24.7653,-8.39841,-8.39841,-8.39841,PL:109.189
+干扰
+TTI[2338] - link[14 , 125] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{125(668.432,2),};Send:（645.098,2）,Receive:（244.881,-10）;Sinr:14.0374,PL:125.618
+Pattern Id:0;Infer_Set:{};Send:（668.432,2）,Receive:（268.215,-10）Sinr:-4.45828,-4.45828,13.4543,13.4543,PL:126.201
+干扰
+TTI[2449] - link[167, 11 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{11(360.884,-10),136(-198.822,2),143(-616.256,2),149(-835.568,2),};Send:（333.662,-10）,Receive:（529.123,6）;Sinr:13.1396,PL:119.424
+Pattern Id:0;Infer_Set:{109(1672.36,2),PL:141.921,};Send:（360.884,-10）,Receive:（556.345,6）Sinr:-40.3871,-40.3871,24.7361,24.7361,PL:112.896
+干扰
+TTI[2787] - link[135, 170] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{170(366.195,6),};Send:（346.75,6）,Receive:（-100.788,2）;Sinr:8.35943,PL:131.296
+Pattern Id:0;Infer_Set:{213(81.9992,10),PL:115.28,};Send:（366.195,6）,Receive:（-81.344,2）Sinr:10.0321,-13.5951,-13.5951,-13.592,PL:128.856
+干扰
+TTI[3025] - link[117, 199] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{199(1486.39,10),};Send:（1482.5,10）,Receive:（1176.2,2）;Sinr:18.9681,PL:120.687
+Pattern Id:0;Infer_Set:{68(-1225.32,-6),PL:156.847,163(1456.48,6),PL:84.1884,217(-276.987,10),PL:150.155,};Send:（1486.39,10）,Receive:（1180.09,2）Sinr:-33.2586,-33.2586,-33.2586,-33.2586,PL:117.447
+干扰
+TTI[3330] - link[145, 215] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{215(-151.184,10),};Send:（-155.073,10）,Receive:（-647.891,2）;Sinr:15.92,PL:123.735
+Pattern Id:0;Infer_Set:{168(515.624,6),PL:133.24,};Send:（-151.184,10）,Receive:（-644.003,2）Sinr:-10.354,5.43266,5.43266,5.43266,PL:126.914
+干扰
+TTI[3532] - link[7  , 167] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{167(599.123,6),};Send:（599.123,6）,Receive:（1083.42,-10）;Sinr:12.6633,PL:126.992
+Pattern Id:0;Infer_Set:{26(-435.16,-10),PL:138.155,109(1715.14,2),PL:145.104,};Send:（599.123,6）,Receive:（1083.42,-10）Sinr:0.567089,11.5736,11.5736,8.35285,PL:126.992
+干扰
+TTI[3587] - link[32 , 152] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{152(-974.83,2),};Send:（-1005.94,2）,Receive:（-1401.84,-10）;Sinr:18.8344,PL:120.821
+Pattern Id:0;Infer_Set:{};Send:（-974.83,2）,Receive:（-1370.73,-10）Sinr:-22.5232,15.0213,15.0213,17.4547,PL:122.201
+干扰
+TTI[3767] - link[128, 88 ] - {FAILED}{DST_IS_SENDING}
+Pattern Id:3;Infer_Set:{88(464.112,-2),};Send:（464.112,-2）,Receive:（404.271,2）;Sinr:53.8706,PL:85.7849
+Pattern Id:0;Infer_Set:{214(90.1125,10),PL:122.931,};Send:（464.112,-2）,Receive:（404.271,2）Sinr:37.0543,37.0543,37.0543,37.0543,PL:85.7849
+干扰
+TTI[3767] - link[214, 131] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{131(268.081,2),};Send:（264.192,2）,Receive:（86.2237,10）;Sinr:28.223,PL:111.432
+Pattern Id:0;Infer_Set:{};Send:（268.081,2）,Receive:（90.1125,10）Sinr:-9.9772,-9.9772,-9.9772,-9.9772,PL:113.589
+干扰
+TTI[3923] - link[117, 123] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{123(783.626,2),};Send:（740.848,2）,Receive:（1172.31,2）;Sinr:13.3633,PL:126.089
+Pattern Id:0;Infer_Set:{97(-836.153,-2),PL:144.368,135(-34.6773,2),PL:138.402,168(538.958,6),PL:112.498,182(-1093.5,6),PL:148.981,};Send:（783.626,2）,Receive:（1215.09,2）Sinr:-13.8597,-13.8597,-13.8625,-13.8736,PL:126.348
+干扰
+TTI[3956] - link[124, 49 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{49(408.095,-6),};Send:（380.872,-6）,Receive:（723.233,2）;Sinr:11.0843,PL:128.571
+Pattern Id:0;Infer_Set:{};Send:（408.095,-6）,Receive:（750.455,2）Sinr:-0.952761,-0.952761,18.0822,18.0822,PL:121.573
+干扰
+TTI[4084] - link[217, 133] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{133(212.814,2),};Send:（208.925,2）,Receive:（-241.987,10）;Sinr:17.599,PL:120.955
+Pattern Id:0;Infer_Set:{23(-119.303,-10),PL:121.129,};Send:（212.814,2）,Receive:（-238.098,10）Sinr:16.9181,16.9181,-0.863024,-0.863024,PL:121.919
+干扰
+TTI[4142] - link[11 , 20 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{20(51.37,-10),};Send:（43.5922,-10）,Receive:（419.218,-10）;Sinr:11.1867,PL:128.469
+Pattern Id:0;Infer_Set:{56(-33.8537,-6),PL:98.5423,195(1710.03,10),PL:147.466,};Send:（51.37,-10）,Receive:（426.996,-10）Sinr:-19.8844,-19.8845,19.2455,-21.2027,PL:119.745
+干扰
+TTI[4213] - link[93 , 136] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{136(-128.822,2),};Send:（-179.378,2）,Receive:（-452.825,-2）;Sinr:20.8619,PL:118.794
+Pattern Id:0;Infer_Set:{};Send:（-128.822,2）,Receive:（-402.269,-2）Sinr:-7.28928,19.4306,22.705,22.705,PL:116.95
+车辆卷绕，已运动出范围
+
+TTI[4383] - link[91 , 16 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{16(202.237,-10),123(799.181,2),};Send:（202.237,-10）,Receive:（-28.5097,-2）;Sinr:18.2858,PL:117.527
+Pattern Id:0;Infer_Set:{};Send:（202.237,-10）,Receive:（-28.5097,-2）Sinr:-9.75738,22.1288,22.1288,22.1288,PL:117.527
+干扰
+TTI[4409] - link[44 , 116] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{116(1245.99,2),};Send:（1242.1,2）,Receive:（980.29,-6）;Sinr:27.1847,PL:112.434
+Pattern Id:0;Infer_Set:{118(1220.8,2),PL:73.6385,203(1130.44,10),PL:101.777,};Send:（1245.99,2）,Receive:（984.179,-6）Sinr:-43.1807,-43.1874,-43.1874,-43.1874,PL:116.819
+干扰
+TTI[4599] - link[83 , 43 ] - {FAILED}{DST_IS_SENDING}
+Pattern Id:3;Infer_Set:{43(1135.85,-6),};Send:（1135.85,-6）,Receive:（970.871,-2）;Sinr:31.6284,PL:108.027
+Pattern Id:0;Infer_Set:{21(-5.76547,-10),PL:144.198,161(-1665.75,6),PL:157.965,};Send:（1135.85,-6）,Receive:（970.871,-2）Sinr:31.6284,31.6284,30.3206,30.2734,PL:108.027
+干扰
+TTI[4611] - link[80 , 6  ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{6(1135.68,-10),47(707.736,-6),};Send:（1127.9,-10）,Receive:（1290.21,-2）;Sinr:19.8572,PL:106.418
+Pattern Id:0;Infer_Set:{114(1326.18,2),PL:108.317,};Send:（1135.68,-10）,Receive:（1297.98,-2）Sinr:32.109,32.2292,0.887591,0.887591,PL:107.426
+干扰
+TTI[4655] - link[89 , 22 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{22(-14.8253,-10),};Send:（-42.0475,-10）,Receive:（372.899,-2）;Sinr:15.2386,PL:124.417
+Pattern Id:0;Infer_Set:{95(-518.489,-2),PL:128.3,};Send:（-14.8253,-10）,Receive:（400.121,-2）Sinr:-56.6457,-56.6457,1.11623,1.11623,PL:126.877
+干扰
+TTI[4743] - link[202, 77 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{77(1709.75,-2),};Send:（1682.52,-2）,Receive:（1214.22,10）;Sinr:7.50761,PL:132.148
+Pattern Id:0;Infer_Set:{113(1499.02,2),PL:118.418,190(-1375.78,6),PL:151.308,};Send:（1709.75,-2）,Receive:（1241.44,10）Sinr:8.7201,-12.4935,-12.4931,-12.4953,PL:130.878
+干扰
+TTI[4795] - link[189, 107] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{107(-1545.33,-2),116(1257.66,2),};Send:（-1560.89,-2）,Receive:（-1360.27,6）;Sinr:23.5629,PL:116.03
+Pattern Id:0;Infer_Set:{168(570.069,6),PL:155.495,};Send:（-1545.33,-2）,Receive:（-1344.72,6）Sinr:-6.63209,-6.63209,-6.63209,26.0104,PL:113.533
+干扰
+TTI[4868] - link[22 , 208] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{208(384.415,10),};Send:（372.748,10）,Receive:（-18.7142,-10）;Sinr:14.3629,PL:125.293
+Pattern Id:0;Infer_Set:{134(33.4391,2),PL:119.102,};Send:（384.415,10）,Receive:（-7.04754,-10）Sinr:1.49915,2.84048,2.84048,-7.01704,PL:126.081
+干扰
+TTI[4899] - link[205, 127] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{127(482.945,2),};Send:（479.056,2）,Receive:（945.118,10）;Sinr:9.08525,PL:130.57
+Pattern Id:0;Infer_Set:{47(715.514,-6),PL:110.735,156(-1418.96,2),PL:155.345,};Send:（482.945,2）,Receive:（949.006,10）Sinr:10.509,10.509,-17.6247,-17.6247,PL:128.354
+干扰
+TTI[5119] - link[53 , 139] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{139(-150.937,2),};Send:（-201.492,2）,Receive:（182.253,-6）;Sinr:18.0332,PL:121.622
+Pattern Id:0;Infer_Set:{211(215.603,10),PL:122.829,};Send:（-150.937,2）,Receive:（232.808,-6）Sinr:15.1628,15.1628,15.1628,-1.75322,PL:124.493
+车辆卷绕，已运动出范围
+
+TTI[5122] - link[211, 50 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{50(419.562,-6),};Send:（419.562,-6）,Receive:（215.603,10）;Sinr:21.9403,PL:117.715
+Pattern Id:0;Infer_Set:{};Send:（419.562,-6）,Receive:（215.603,10）Sinr:-5.61288,21.9403,21.9403,21.9403,PL:117.715
+干扰
+TTI[5164] - link[52 , 58 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{58(-67.7239,-6),};Send:（-83.2795,-6）,Receive:（386.56,-6）;Sinr:16.8263,PL:122.829
+Pattern Id:0;Infer_Set:{};Send:（-67.7239,-6）,Receive:（402.115,-6）Sinr:1.8825,13.0264,13.0264,13.0264,PL:126.629
+干扰
+TTI[5479] - link[193, 185] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{185(-1162.8,6),};Send:（-1186.13,6）,Receive:（-1625.76,10）;Sinr:16.1099,PL:123.546
+Pattern Id:0;Infer_Set:{57(2.24316,-6),PL:143.325,200(1306.39,10),PL:156.25,};Send:（-1162.8,6）,Receive:（-1602.43,10）Sinr:-23.8071,-23.8074,12.8262,12.7601,PL:125.277
+干扰
+TTI[5519] - link[6  , 124] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{124(812.678,2),};Send:（773.789,2）,Receive:（1131.79,-10）;Sinr:13.6472,PL:126.008
+Pattern Id:0;Infer_Set:{87(807.342,-2),PL:61.8828,};Send:（812.678,2）,Receive:（1170.68,-10）Sinr:-2.90365,-2.90365,-2.88634,-62.519,PL:124.402
+干扰
+TTI[5585] - link[141, 144] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{144(-514.356,2),};Send:（-561.023,2）,Receive:（-519.929,2）;Sinr:53.2154,PL:86.44
+Pattern Id:0;Infer_Set:{61(-506.711,-6),PL:69.5049,};Send:（-514.356,2）,Receive:（-473.262,2）Sinr:43.7525,-11.1615,-11.1615,-11.1615,PL:80.6664
+干扰
+TTI[5608] - link[52 , 127] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{127(514.056,2),};Send:（502.39,2）,Receive:（409.893,-6）;Sinr:39.2548,PL:100.401
+Pattern Id:0;Infer_Set:{88(538,-2),PL:75.7241,};Send:（514.056,2）,Receive:（421.56,-6）Sinr:31.1076,43.3797,43.3797,-20.5517,PL:96.2758
+干扰
+TTI[5667] - link[209, 214] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{214(164.001,10),};Send:（144.557,10）,Receive:（394.511,10）;Sinr:17.9812,PL:113.157
+Pattern Id:0;Infer_Set:{};Send:（164.001,10）,Receive:（413.956,10）Sinr:-18.8932,25.7477,25.7477,25.7477,PL:113.908
+干扰
+TTI[5692] - link[205, 114] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{114(1365.06,2),218(-286.002,10),};Send:（1341.73,2）,Receive:（956.784,10）;Sinr:13.002,PL:125.598
+Pattern Id:0;Infer_Set:{8(943.726,-10),PL:127.713,77(-1719.25,-2),PL:161.94,};Send:（1365.06,2）,Receive:（980.118,10）Sinr:11.8651,11.8651,11.9679,-0.24553,PL:127.688
+干扰
+TTI[5697] - link[69 , 65 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{65(-873.27,-6),};Send:（-877.158,-6）,Receive:（-1275.29,-6）;Sinr:16.379,PL:123.276
+Pattern Id:0;Infer_Set:{44(1030.85,-6),PL:152.91,104(-1268.49,-2),PL:118.949,};Send:（-873.27,-6）,Receive:（-1271.4,-6）Sinr:10.465,10.465,15.7092,-4.79567,PL:123.706
+干扰
+TTI[5825] - link[65 , 71 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{71(-1305.52,-6),};Send:（-1332.74,-6）,Receive:（-892.714,-6）;Sinr:13.6215,PL:126.034
+Pattern Id:0;Infer_Set:{56(32.2574,-6),PL:147.363,195(-1687.86,10),PL:125.442,};Send:（-1305.52,-6）,Receive:（-865.492,-6）Sinr:15.1998,15.1998,0.856742,0.829934,PL:124.424
+干扰
+TTI[5872] - link[29 , 61 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{61(-495.044,-6),};Send:（-541.711,-6）,Receive:（-783.032,-10）;Sinr:23.3757,PL:116.28
+Pattern Id:0;Infer_Set:{175(-223.713,6),PL:112.867,};Send:（-495.044,-6）,Receive:（-736.366,-10）Sinr:-0.0303906,-0.0303906,-0.0303906,-0.0303906,PL:112.888
+干扰
+TTI[5988] - link[189, 104] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{104(-1256.83,-2),};Send:（-1291.83,-2）,Receive:（-1333.05,6）;Sinr:56.831,PL:82.8245
+Pattern Id:0;Infer_Set:{};Send:（-1256.83,-2）,Receive:（-1298.05,6）Sinr:-20.5231,52.4893,56.679,56.679,PL:82.9765
+干扰
+TTI[5996] - link[223, 71 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{71(-1301.63,-6),};Send:（-1332.74,-6）,Receive:（-909.45,10）;Sinr:11.4025,PL:128.253
+Pattern Id:0;Infer_Set:{173(167.859,6),PL:146.64,190(-1329.11,6),PL:82.6606,};Send:（-1301.63,-6）,Receive:（-878.339,10）Sinr:-8.32015,-44.0908,-44.0908,-44.0908,PL:126.751
+干扰
+TTI[6016] - link[83 , 169] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{169(550.945,6),};Send:（512.056,6）,Receive:（990.315,-2）;Sinr:10.8833,PL:128.772
+Pattern Id:0;Infer_Set:{52(437.115,-6),PL:107.753,};Send:（550.945,6）,Receive:（1029.2,-2）Sinr:2.99642,2.99642,-22.5479,-22.5479,PL:130.298
+干扰
+TTI[6035] - link[210, 87 ] - {FAILED}{DST_IS_SENDING}
+Pattern Id:3;Infer_Set:{87(826.787,-2),};Send:（772.342,-2）,Receive:（317.004,10）;Sinr:13.5393,PL:126.116
+Pattern Id:0;Infer_Set:{};Send:（826.787,-2）,Receive:（371.449,10）Sinr:6.98999,8.61887,8.61887,8.61887,PL:131.037
+车辆卷绕，已运动出范围
+
+TTI[6040] - link[125, 118] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{118(1283.02,2),};Send:（1275.25,2）,Receive:（804.543,2）;Sinr:13.3378,PL:126.318
+Pattern Id:0;Infer_Set:{81(1310.51,-2),PL:81.6418,114(1380.62,2),PL:101.201,};Send:（1283.02,2）,Receive:（812.32,2）Sinr:8.74683,8.74683,-29.7081,-49.3146,PL:130.909
+干扰
+TTI[6098] - link[152, 141] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{141(-453.818,2),};Send:（-484.929,2）,Receive:（-908.719,2）;Sinr:6.72148,PL:132.934
+Pattern Id:0;Infer_Set:{149(-695.568,2),PL:112.936,};Send:（-453.818,2）,Receive:（-877.608,2）Sinr:13.393,13.393,-13.3357,-13.3357,PL:126.262
+干扰
+TTI[6100] - link[149, 154] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{154(-1068.51,2),};Send:（-1099.62,2）,Receive:（-722.79,2）;Sinr:16.7693,PL:122.886
+Pattern Id:0;Infer_Set:{};Send:（-1068.51,2）,Receive:（-691.679,2）Sinr:-9.80318,-9.80318,14.2624,17.9955,PL:121.66
+干扰
+TTI[6148] - link[166, 170] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{170(498.417,6),};Send:（490.639,6）,Receive:（819.6,6）;Sinr:17.3284,PL:121.6
+Pattern Id:0;Infer_Set:{207(594.127,10),PL:96.1414,};Send:（498.417,6）,Receive:（827.378,6）Sinr:29.3482,-14.1661,-14.1661,-14.1661,PL:110.307
+干扰
+TTI[6388] - link[204, 85 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{85(894.015,-2),138(-89.9388,2),};Send:（859.015,-2）,Receive:（1100.34,10）;Sinr:25.2522,PL:113.602
+Pattern Id:0;Infer_Set:{48(763.889,-6),PL:108.714,49(501.428,-6),PL:130.799,227(-1483.11,10),PL:165.369,};Send:（894.015,-2）,Receive:（1135.34,10）Sinr:11.8805,11.4612,-0.495629,-0.495494,PL:109.179
+干扰
+TTI[6424] - link[43 , 206] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{206(972.753,10),};Send:（964.976,10）,Receive:（1201.96,-6）;Sinr:24.5787,PL:115.077
+Pattern Id:0;Infer_Set:{};Send:（972.753,10）,Receive:（1209.74,-6）Sinr:-6.64286,-6.64286,-6.57929,-6.57929,PL:116.78
+干扰
+TTI[6470] - link[171, 23 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{23(-25.9701,-10),};Send:（-60.9701,-10）,Receive:（268.723,6）;Sinr:17.6072,PL:122.048
+Pattern Id:0;Infer_Set:{168(636.18,6),PL:136.928,188(-1273.7,6),PL:143.924,};Send:（-25.9701,-10）,Receive:（303.723,6）Sinr:-25.9872,15.8185,15.8185,15.2869,PL:119.252
+干扰
+TTI[6707] - link[128, 86 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{86(876.979,-2),115(1394.89,2),};Send:（857.534,-2）,Receive:（501.494,2）;Sinr:9.0578,PL:124.272
+Pattern Id:0;Infer_Set:{};Send:（876.979,-2）,Receive:（520.938,2）Sinr:-0.45008,-0.45008,-0.45008,-0.45008,PL:125.586
+干扰
+TTI[6761] - link[93 , 27 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{27(-434.802,-10),189(-1266.94,6),};Send:（-450.358,-10）,Receive:（-320.603,-2）;Sinr:28.378,PL:107.623
+Pattern Id:0;Infer_Set:{215(-18.9616,10),PL:116.42,};Send:（-434.802,-10）,Receive:（-305.047,-2）Sinr:-0.682116,9.54892,9.54892,9.54892,PL:106.851
+干扰
+TTI[6828] - link[8  , 86 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{86(880.868,-2),115(1398.78,2),};Send:（857.534,-2）,Receive:（967.059,-10）;Sinr:27.7976,PL:96.8441
+Pattern Id:0;Infer_Set:{80(1383.54,-2),PL:127.881,112(1686.49,2),PL:136.057,166(854.6,6),PL:78.529,169(582.056,6),PL:117.307,};Send:（880.868,-2）,Receive:（990.393,-10）Sinr:-23.0355,-23.0355,-23.0355,-23.0355,PL:101.564
+干扰
+TTI[7077] - link[0  , 104] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{104(-1214.05,-2),121(982.451,2),};Send:（-1237.38,-2）,Receive:（-1730.04,-10）;Sinr:10.0209,PL:129.528
+Pattern Id:0;Infer_Set:{};Send:（-1214.05,-2）,Receive:（-1706.7,-10）Sinr:-65.358,11.4023,11.4023,11.4023,PL:128.253
+干扰
+TTI[7199] - link[101, 145] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{145(-496.225,2),};Send:（-519.558,2）,Receive:（-1006.65,-2）;Sinr:12.7717,PL:126.884
+Pattern Id:0;Infer_Set:{133(333.37,2),PL:138.15,};Send:（-496.225,2）,Receive:（-983.319,-2）Sinr:5.56874,5.56874,1.74073,1.74073,PL:134.087
+干扰
+TTI[7579] - link[67 , 105] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{105(-1347.59,-2),};Send:（-1386.48,-2）,Receive:（-1037.37,-6）;Sinr:20.3616,PL:119.294
+Pattern Id:0;Infer_Set:{13(491.277,-10),PL:150.613,41(-1659.93,-6),PL:124.888,};Send:（-1347.59,-2）,Receive:（-998.484,-6）Sinr:11.1992,-3.72159,-3.72159,-3.72159,PL:128.456
+干扰
+TTI[7620] - link[16 , 46 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{46(828.166,-6),};Send:（785.388,-6）,Receive:（287.793,-10）;Sinr:6.40765,PL:130.614
+Pattern Id:0;Infer_Set:{64(-752.089,-6),PL:146.266,122(939.254,2),PL:102.674,};Send:（828.166,-6）,Receive:（330.57,-10）Sinr:-24.4887,-24.4889,-24.4889,-24.4888,PL:127.162
+干扰
+TTI[7621] - link[64 , 186] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{186(-1177.73,6),};Send:（-1201.06,6）,Receive:（-775.423,-6）;Sinr:14.2112,PL:125.444
+Pattern Id:0;Infer_Set:{};Send:（-1177.73,6）,Receive:（-752.089,-6）Sinr:-9.4456,-9.4456,16.5619,17.1194,PL:122.536
+干扰
+TTI[7688] - link[149, 177] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{177(-372.015,6),};Send:（-403.126,6）,Receive:（-664.457,2）;Sinr:26.517,PL:113.138
+Pattern Id:0;Infer_Set:{23(20.6966,-10),PL:117.252,};Send:（-372.015,6）,Receive:（-633.346,2）Sinr:13.2623,13.2623,21.8046,-0.623745,PL:117.851
+干扰
+TTI[7730] - link[128, 18 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{18(243.399,-10),};Send:（200.622,-10）,Receive:（517.049,2）;Sinr:17.8992,PL:121.756
+Pattern Id:0;Infer_Set:{120(1070.26,2),PL:134.505,};Send:（243.399,-10）,Receive:（559.827,2）Sinr:-14.7487,-14.7487,-14.7533,13.8373,PL:119.51
+干扰
+TTI[7753] - link[91 , 13 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{13(499.055,-10),};Send:（495.166,-10）,Receive:（99.8236,-2）;Sinr:15.3975,PL:124.258
+Pattern Id:0;Infer_Set:{43(1260.3,-6),PL:132.404,65(-791.603,-6),PL:145.624,121(1009.67,2),PL:126.158,126(730.416,2),PL:117.263,151(-810.776,2),PL:147.674,191(-1320.94,6),PL:145.896,};Send:（499.055,-10）,Receive:（103.712,-2）Sinr:12.3076,-4.84269,-4.79226,-5.29994,PL:121.884
+干扰
+TTI[7904] - link[177, 21 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{21(126.457,-10),};Send:（122.568,-10）,Receive:（-364.237,6）;Sinr:15.2948,PL:124.361
+Pattern Id:0;Infer_Set:{};Send:（126.457,-10）,Receive:（-360.348,6）Sinr:-0.998527,17.6379,17.6379,17.6379,PL:122.018
+干扰
+TTI[7926] - link[181, 145] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{145(-465.114,2),};Send:（-469.003,2）,Receive:（-898.984,6）;Sinr:15.5437,PL:124.112
+Pattern Id:0;Infer_Set:{};Send:（-465.114,2）,Receive:（-895.095,6）Sinr:-7.3898,-6.50627,9.88716,9.88716,PL:129.768
+干扰
+TTI[7971] - link[36 , 157] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{157(-1324.3,2),};Send:（-1363.19,2）,Receive:（-1458.86,-10）;Sinr:37.9113,PL:99.1293
+Pattern Id:0;Infer_Set:{53(341.697,-6),PL:144.787,98(-799.136,-2),PL:126.99,};Send:（-1324.3,2）,Receive:（-1419.97,-10）Sinr:-29.897,-29.897,39.7794,27.9795,PL:98.7141
+干扰
+TTI[8168] - link[178, 103] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{103(-1100.53,-2),};Send:（-1104.42,-2）,Receive:（-620.298,6）;Sinr:10.7459,PL:128.91
+Pattern Id:0;Infer_Set:{64(-732.645,-6),PL:123.853,159(-1411.23,2),PL:121.263,182(-930.169,6),PL:109.649,};Send:（-1100.53,-2）,Receive:（-616.409,6）Sinr:15.4205,15.4205,-15.0311,-15.0311,PL:124.235
+干扰
+TTI[8199] - link[179, 219] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{219(-254.589,10),};Send:（-254.589,10）,Receive:（-656.225,6）;Sinr:16.4569,PL:123.199
+Pattern Id:0;Infer_Set:{222(-569.196,10),PL:119.114,};Send:（-254.589,10）,Receive:（-656.225,6）Sinr:-4.15916,-4.12265,-4.12265,-4.12265,PL:123.199
+干扰
+TTI[8233] - link[180, 27 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{27(-376.469,-10),};Send:（-395.913,-10）,Receive:（-686.332,6）;Sinr:21.4379,PL:118.218
+Pattern Id:0;Infer_Set:{219(-250.7,10),PL:104.846,};Send:（-376.469,-10）,Receive:（-666.888,6）Sinr:17.0288,-15.8356,-15.8356,-15.8356,PL:120.68
+干扰
+TTI[8234] - link[219, 148] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{148(-604.016,2),};Send:（-654.571,2）,Receive:（-301.255,10）;Sinr:19.5781,PL:120.077
+Pattern Id:0;Infer_Set:{};Send:（-604.016,2）,Receive:（-250.7,10）Sinr:-26.9406,-26.9406,-26.9406,17.5444,PL:122.111
+车辆卷绕，已运动出范围
+
+TTI[8288] - link[40 , 191] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{191(-1301.5,6),};Send:（-1305.39,6）,Receive:（-1591.27,-6）;Sinr:19.6769,PL:119.979
+Pattern Id:0;Infer_Set:{};Send:（-1301.5,6）,Receive:（-1587.39,-6）Sinr:-11.2628,-11.2628,20.527,20.527,PL:119.128
+干扰
+TTI[8365] - link[219, 61 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{61(-397.822,-6),};Send:（-405.6,-6）,Receive:（-254.589,10）;Sinr:32.1686,PL:106.603
+Pattern Id:0;Infer_Set:{95(-374.6,-2),PL:75.6186,};Send:（-397.822,-6）,Receive:（-246.811,10）Sinr:37.0881,37.0881,-26.9487,-26.9487,PL:102.567
+干扰
+TTI[8428] - link[67 , 178] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{178(-604.743,6),};Send:（-647.52,6）,Receive:（-1006.26,-6）;Sinr:14.475,PL:125.18
+Pattern Id:0;Infer_Set:{36(-1400.52,-10),PL:138.665,};Send:（-604.743,6）,Receive:（-963.484,-6）Sinr:-11.6448,-11.6553,-11.6553,11.698,PL:124.424
+干扰
+TTI[8492] - link[43 , 79 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{79(1726.1,-2),};Send:（1683.32,-2）,Receive:（1244.74,-6）;Sinr:20.4388,PL:119.146
+Pattern Id:0;Infer_Set:{};Send:（1726.1,-2）,Receive:（1287.52,-6）Sinr:-8.41985,18.2001,19.2685,19.3081,PL:120.347
+干扰
+TTI[8581] - link[75 , 104] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{104(-1155.72,-2),};Send:（-1175.16,-2）,Receive:（-1489.21,-2）;Sinr:17.8926,PL:121.763
+Pattern Id:0;Infer_Set:{159(-1395.68,2),PL:113.055,};Send:（-1155.72,-2）,Receive:（-1469.77,-2）Sinr:11.131,-6.41611,-6.41611,-6.41611,PL:119.462
+干扰
+TTI[8582] - link[159, 153] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{153(-921.969,2),};Send:（-921.969,2）,Receive:（-1395.68,2）;Sinr:10.4757,PL:129.18
+Pattern Id:0;Infer_Set:{};Send:（-921.969,2）,Receive:（-1395.68,2）Sinr:-2.45294,-2.45294,-2.45294,10.4757,PL:129.18
+干扰
+TTI[8600] - link[227, 184] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{};Send:（-1029.53,6）,Receive:（-1448.11,10）;Sinr:14.225,PL:125.43
+Pattern Id:0;Infer_Set:{53(368.919,-6),PL:146.32,221(-528.029,10),PL:120.791,};Send:（-975.089,6）,Receive:（-1393.67,10）Sinr:13.1434,13.1434,-0.279769,0.25548,PL:120.468
+车辆卷绕，已运动出范围
+
+TTI[8604] - link[98 , 71 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{71(-1196.63,-6),};Send:（-1219.96,-6）,Receive:（-795.247,-2）;Sinr:5.98299,PL:123.578
+Pattern Id:0;Infer_Set:{34(-1381.51,-10),PL:113.832,};Send:（-1196.63,-6）,Receive:（-771.914,-2）Sinr:7.95917,7.95917,-12.7552,-12.7552,PL:126.576
+干扰
+TTI[8606] - link[34 , 101] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{101(-924.986,-2),176(-326.063,6),};Send:（-944.431,-2）,Receive:（-1400.96,-10）;Sinr:11.2158,PL:124.934
+Pattern Id:0;Infer_Set:{};Send:（-924.986,-2）,Receive:（-1381.51,-10）Sinr:-12.0252,-12.0252,14.5855,14.5855,PL:125.07
+干扰
+TTI[8677] - link[56 , 14 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{14(513.215,-10),};Send:（509.326,-10）,Receive:（137.257,-6）;Sinr:15.8259,PL:123.83
+Pattern Id:0;Infer_Set:{180(-651.332,6),PL:141.86,};Send:（513.215,-10）,Receive:（141.146,-6）Sinr:1.46761,1.34347,1.34347,12.5928,PL:125.016
+干扰
+TTI[8685] - link[195, 72 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{72(-1264.96,-6),};Send:（-1264.96,-6）,Receive:（-1578.97,10）;Sinr:13.0183,PL:126.637
+Pattern Id:0;Infer_Set:{28(-491.519,-10),PL:135.311,};Send:（-1264.96,-6）,Receive:（-1578.97,10）Sinr:-10.1134,7.31361,7.31361,7.31361,PL:126.637
+干扰
+TTI[8702] - link[184, 69 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{69(-1150.85,-6),};Send:（-1162.51,-6）,Receive:（-982.867,6）;Sinr:33.2375,PL:106.418
+Pattern Id:0;Infer_Set:{106(-1307.26,-2),PL:110.034,};Send:（-1150.85,-6）,Receive:（-971.2,6）Sinr:31.3866,-3.73246,-3.73246,-3.73246,PL:113.761
+干扰
+TTI[8868] - link[111, 33 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{33(-1342.47,-10),};Send:（-1354.13,-10）,Receive:（-1590,2）;Sinr:23.229,PL:116.426
+Pattern Id:0;Infer_Set:{113(1658.46,2),PL:157.636,124(941.011,2),PL:157.026,188(-1180.36,6),PL:110.134,207(699.127,10),PL:148.915,};Send:（-1342.47,-10）,Receive:（-1578.33,2）Sinr:-11.3197,-11.3203,-11.3203,-11.3204,PL:121.449
+干扰
+TTI[8971] - link[31 , 151] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{151(-764.11,2),};Send:（-799.11,2）,Receive:（-1168.19,-10）;Sinr:12.9388,PL:126.717
+Pattern Id:0;Infer_Set:{101(-913.319,-2),PL:109.321,};Send:（-764.11,2）,Receive:（-1133.19,-10）Sinr:-39.9712,-39.9798,-12.978,-12.9777,PL:122.295
+干扰
+TTI[9083] - link[17 , 215] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{215(70.4828,10),};Send:（39.3717,10）,Receive:（315.15,-10）;Sinr:20.6881,PL:118.967
+Pattern Id:0;Infer_Set:{177(-317.57,6),PL:115.698,};Send:（70.4828,10）,Receive:（346.261,-10）Sinr:12.9601,14.2413,-9.73331,-9.73331,PL:125.414
+干扰
+TTI[9090] - link[216, 214] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{214(296.224,10),};Send:（269.001,10）,Receive:（-7.44306,10）;Sinr:22.0193,PL:117.636
+Pattern Id:0;Infer_Set:{};Send:（296.224,10）,Receive:（19.7792,10）Sinr:-42.1065,-42.1065,-42.1065,-42.1065,PL:117.51
+干扰
+TTI[9208] - link[15 , 216] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{216(27.5569,10),};Send:（-11.3319,10）,Receive:（424.874,-10）;Sinr:15.946,PL:123.709
+Pattern Id:0;Infer_Set:{68(-984.213,-6),PL:139.338,139(8.5076,2),PL:72.9336,};Send:（27.5569,10）,Receive:（463.763,-10）Sinr:11.0561,-52.494,-52.494,-52.494,PL:125.428
+干扰
+TTI[9217] - link[78 , 196] - {FAILED}{DST_IS_SENDING}
+Pattern Id:3;Infer_Set:{196(-1661.56,10),};Send:（-1692.67,10）,Receive:（-1724.44,-2）;Sinr:60.1816,PL:79.4739
+Pattern Id:0;Infer_Set:{196(-1661.56,10),PL:inf,};Send:（-1661.56,10）,Receive:（-1693.33,-2）Sinr:58.8404,58.8404,58.8404,58.8404,PL:80.815
+干扰
+TTI[9379] - link[92 , 54 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{54(263.316,-6),};Send:（232.205,-6）,Receive:（-200.333,-2）;Sinr:12.474,PL:127.181
+Pattern Id:0;Infer_Set:{51(575,-6),PL:117.152,};Send:（263.316,-6）,Receive:（-169.221,-2）Sinr:-17.7284,-17.7284,14.4416,-8.08622,PL:125.214
+干扰
+TTI[9454] - link[84 , 202] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{202(1424.22,10),};Send:（1416.44,10）,Receive:（1117.46,-2）;Sinr:16.6604,PL:122.76
+Pattern Id:0;Infer_Set:{43(1326.41,-6),PL:100.209,132(436.512,2),PL:139.098,165(1118.05,6),PL:121.179,};Send:（1424.22,10）,Receive:（1125.24,-2）Sinr:18.1183,-18.0316,-18.0662,-18.0662,PL:118.239
+干扰
+TTI[9518] - link[36 , 157] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{157(-1262.08,2),195(-1543.97,10),};Send:（-1281.52,2）,Receive:（-1377.19,-10）;Sinr:8.84619,PL:97.5586
+Pattern Id:0;Infer_Set:{34(-1346.51,-10),PL:99.6184,};Send:（-1262.08,2）,Receive:（-1357.75,-10）Sinr:36.9505,36.9505,36.9505,-3.08701,PL:102.705
+干扰
+TTI[9521] - link[34 , 108] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{108(-1447.46,2),};Send:（-1466.9,2）,Receive:（-1365.96,-10）;Sinr:39.4763,PL:100.179
+Pattern Id:0;Infer_Set:{};Send:（-1447.46,2）,Receive:（-1346.51,-10）Sinr:-7.56428,36.3827,36.3827,36.3827,PL:103.273
+干扰
+TTI[9532] - link[178, 143] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{143(-340.145,2),};Send:（-355.701,2）,Receive:（-577.52,6）;Sinr:27.9108,PL:111.745
+Pattern Id:0;Infer_Set:{147(-537.646,2),PL:113.037,};Send:（-340.145,2）,Receive:（-561.965,6）Sinr:20.2937,26.4582,26.4582,-0.169393,PL:113.197
+干扰
+TTI[9582] - link[122, 11 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{11(636.996,-10),};Send:（633.107,-10）,Receive:（1009.25,2）;Sinr:14.1638,PL:125.492
+Pattern Id:0;Infer_Set:{198(-1700.73,10),PL:156.035,};Send:（636.996,-10）,Receive:（1013.14,2）Sinr:-7.90835,-7.90964,-7.90964,10.881,PL:128.676
+干扰
+TTI[9699] - link[195, 78 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{78(-1677.77,-2),};Send:（-1681.66,-2）,Receive:（-1543.97,10）;Sinr:36.637,PL:103.018
+Pattern Id:0;Infer_Set:{110(-1522.29,2),PL:107.118,133(430.592,2),PL:147.953,};Send:（-1677.77,-2）,Receive:（-1540.08,10）Sinr:28.7809,-2.22953,-2.22953,-2.22886,PL:109.344
+干扰
+TTI[9733] - link[130, 170] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{170(638.417,6),};Send:（615.084,6）,Receive:（556.995,2）;Sinr:47.683,PL:91.9725
+Pattern Id:0;Infer_Set:{81(1454.4,-2),PL:133.293,122(1020.92,2),PL:119.888,};Send:（638.417,6）,Receive:（580.329,2）Sinr:-37.345,37.9212,37.9212,25.1823,PL:94.4686
+干扰
+TTI[10146] - link[108, 70 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{70(-1110.8,-6),170(653.973,6),};Send:（-1126.36,-6）,Receive:（-1439.68,2）;Sinr:15.2955,PL:124.124
+Pattern Id:0;Infer_Set:{105(-1246.48,-2),PL:108.697,};Send:（-1110.8,-6）,Receive:（-1424.13,2）Sinr:20.0432,-10.9183,-10.9183,-10.9183,PL:119.612
+干扰
+TTI[10199] - link[81 , 6  ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{6(1349.57,-10),};Send:（1345.68,-10）,Receive:（1466.07,-2）;Sinr:39.6889,PL:99.9666
+Pattern Id:0;Infer_Set:{116(1467.66,2),PL:103.782,};Send:（1349.57,-10）,Receive:（1469.96,-2）Sinr:12.1783,12.1783,-2.98096,-2.84794,PL:106.629
+干扰
+TTI[10265] - link[50 , 133] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{133(453.925,2),};Send:（426.703,2）,Receive:（590.673,-6）;Sinr:28.4343,PL:111.221
+Pattern Id:0;Infer_Set:{132(467.623,2),PL:67.5852,};Send:（453.925,2）,Receive:（617.896,-6）Sinr:27.9626,-44.1077,-44.1077,-44.1077,PL:111.693
+干扰
+TTI[10269] - link[140, 20 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{20(288.592,-10),};Send:（265.259,-10）,Receive:（-178.316,2）;Sinr:12.7894,PL:126.866
+Pattern Id:0;Infer_Set:{225(-1175.37,10),PL:147.87,};Send:（288.592,-10）,Receive:（-154.982,2）Sinr:-18.8567,7.44831,7.44831,6.83816,PL:132.207
+干扰
+TTI[10291] - link[117, 166] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{166(986.822,6),};Send:（979.044,6）,Receive:（1452.31,2）;Sinr:14.9888,PL:124.667
+Pattern Id:0;Infer_Set:{135(210.323,2),PL:140.211,186(-1076.62,6),PL:152.517,};Send:（986.822,6）,Receive:（1460.09,2）Sinr:4.25271,1.51127,1.39336,1.39336,PL:135.403
+干扰
+TTI[10433] - link[97 , 92 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{92(-126.444,-2),};Send:（-165.333,-2）,Receive:（-622.264,-2）;Sinr:9.47568,PL:130.18
+Pattern Id:0;Infer_Set:{86(1020.87,-2),PL:147.767,89(625.676,-2),PL:134.572,140(-147.205,2),PL:80.3802,};Send:（-126.444,-2）,Receive:（-583.375,-2）Sinr:-42.7889,-42.7889,-42.7889,-42.7889,PL:123.169
+干扰
+TTI[10584] - link[107, 185] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{185(-964.468,6),};Send:（-976.135,6）,Receive:（-1331.44,-2）;Sinr:17.3269,PL:122.329
+Pattern Id:0;Infer_Set:{99(-734.235,-2),PL:118.823,};Send:（-964.468,6）,Receive:（-1319.78,-2）Sinr:15.0152,-5.53334,-5.53334,-5.53334,PL:124.318
+干扰
+TTI[10693] - link[162, 31 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{31(-1067.07,-10),};Send:（-1070.96,-10）,Receive:（-1515.87,6）;Sinr:13.7532,PL:125.902
+Pattern Id:0;Infer_Set:{};Send:（-1067.07,-10）,Receive:（-1511.98,6）Sinr:-25.0327,-4.76644,-4.76644,12.7247,PL:126.931
+干扰
+TTI[10821] - link[150, 66 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{66(-711.284,-6),};Send:（-715.173,-6）,Receive:（-592.497,2）;Sinr:35.4353,PL:104.22
+Pattern Id:0;Infer_Set:{};Send:（-711.284,-6）,Receive:（-588.608,2）Sinr:-23.709,-23.709,-23.709,41.156,PL:98.4995
+干扰
+TTI[10947] - link[206, 9  ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{9(950.664,-10),177(-243.681,6),};Send:（927.331,-10）,Receive:（1124.42,10）;Sinr:20.9351,PL:117.055
+Pattern Id:0;Infer_Set:{50(645.118,-6),PL:115.991,215(144.372,10),PL:143.153,};Send:（950.664,-10）,Receive:（1147.75,10）Sinr:24.5163,0.833715,0.825409,0.825409,PL:115.139
+干扰
+TTI[10949] - link[215, 132] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{132(494.845,2),};Send:（455.956,2）,Receive:（105.483,10）;Sinr:14.6225,PL:124.476
+Pattern Id:0;Infer_Set:{};Send:（494.845,2）,Receive:（144.372,10）Sinr:-18.855,-18.855,-18.8475,16.5933,PL:123.062
+干扰
+TTI[10963] - link[218, 149] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{149(-505.013,2),};Send:（-512.79,2）,Receive:（-87.6687,10）;Sinr:11.0788,PL:128.577
+Pattern Id:0;Infer_Set:{27(-271.469,-10),PL:114.291,135(237.545,2),PL:129.432,};Send:（-505.013,2）,Receive:（-79.891,10）Sinr:13.2183,2.60084,2.60084,-12.2893,PL:126.437
+干扰
+TTI[10977] - link[212, 175] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{175(-25.3792,6),};Send:（-72.0459,6）,Receive:（357.59,10）;Sinr:13.3281,PL:126.327
+Pattern Id:0;Infer_Set:{20(315.814,-10),PL:124.489,140(-127.76,2),PL:99.1537,};Send:（-25.3792,6）,Receive:（404.257,10）Sinr:13.9655,13.9655,-26.5494,-26.5494,PL:125.69
+干扰
+TTI[10981] - link[85 , 200] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{200(1520.28,10),224(-927.992,10),};Send:（1496.95,10）,Receive:（1049.57,-2）;Sinr:13.7788,PL:125.062
+Pattern Id:0;Infer_Set:{122(1067.59,2),PL:126.028,};Send:（1520.28,10）,Receive:（1072.9,-2）Sinr:0.233876,0.233876,0.512345,0.512345,PL:125.331
+干扰
+TTI[10981] - link[122, 166] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{166(1014.04,6),};Send:（979.044,6）,Receive:（1032.59,2）;Sinr:54.2953,PL:85.3602
+Pattern Id:0;Infer_Set:{};Send:（1014.04,6）,Receive:（1067.59,2）Sinr:-3.65894,-3.65894,-3.65879,-3.65879,PL:91.3017
+干扰
+TTI[11260] - link[40 , 36 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{36(-1291.63,-10),};Send:（-1307.19,-10）,Receive:（-1486.27,-6）;Sinr:29.0183,PL:110.637
+Pattern Id:0;Infer_Set:{};Send:（-1291.63,-10）,Receive:（-1470.72,-6）Sinr:-4.47638,28.2128,28.2128,28.2128,PL:111.443
+干扰
+TTI[11265] - link[157, 2  ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{2(-1585.21,-10),};Send:（-1596.88,-10）,Receive:（-1207.63,2）;Sinr:16.8365,PL:122.819
+Pattern Id:0;Infer_Set:{36(-1291.63,-10),PL:117.155,193(-1376.87,10),PL:111.49,};Send:（-1585.21,-10）,Receive:（-1195.97,2）Sinr:13.0938,13.0938,-15.078,-16.1192,PL:126.562
+干扰
+TTI[11431] - link[177, 150] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{150(-565.274,2),157(-1188.19,2),};Send:（-623.608,2）,Receive:（-282.57,6）;Sinr:14.4359,PL:118.691
+Pattern Id:0;Infer_Set:{};Send:（-565.274,2）,Receive:（-224.237,6）Sinr:-24.4078,-24.4078,-24.4078,16.3328,PL:123.323
+车辆卷绕，已运动出范围
+
+TTI[11439] - link[48 , 16 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{16(478.348,-10),164(1309.12,6),};Send:（427.793,-10）,Receive:（911.667,-6）;Sinr:2.44885,PL:119.682
+Pattern Id:0;Infer_Set:{34(-1272.62,-10),PL:152.153,135(256.989,2),PL:118.506,};Send:（478.348,-10）,Receive:（962.223,-6）Sinr:10.775,13.222,-7.96028,-7.96214,PL:126.433
+车辆卷绕，已运动出范围
+
+TTI[11493] - link[199, 110] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{110(-1452.29,2),};Send:（-1479.51,2）,Receive:（-1678.17,10）;Sinr:26.2737,PL:113.382
+Pattern Id:0;Infer_Set:{62(-455.819,-6),PL:140.298,141(-243.818,2),PL:142.991,};Send:（-1452.29,2）,Receive:（-1650.94,10）Sinr:-0.0889775,16.13,24.5853,24.5853,PL:111.39
+干扰
+TTI[11495] - link[141, 91 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{91(247.601,-2),};Send:（220.379,-2）,Receive:（-271.04,2）;Sinr:14.7865,PL:124.869
+Pattern Id:0;Infer_Set:{};Send:（247.601,-2）,Receive:（-243.818,2）Sinr:0.640782,0.640782,0.71406,11.0729,PL:128.583
+干扰
+TTI[11587] - link[134, 50 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{50(668.451,-6),};Send:（645.118,-6）,Receive:（270.661,2）;Sinr:23.0497,PL:116.606
+Pattern Id:0;Infer_Set:{};Send:（668.451,-6）,Receive:（293.995,2）Sinr:1.67011,1.67011,16.5137,16.5137,PL:122.747
+干扰
+TTI[11824] - link[146, 152] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{152(-652.053,2),};Send:（-679.275,2）,Receive:（-348.904,2）;Sinr:23.4953,PL:116.16
+Pattern Id:0;Infer_Set:{145(-313.447,2),PL:121.028,180(-526.888,6),PL:108.635,198(-1611.28,10),PL:142.364,};Send:（-652.053,2）,Receive:（-321.681,2）Sinr:-9.36095,-9.60412,-9.60412,-9.60586,PL:117.992
+干扰
+TTI[11852] - link[221, 181] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{181(-743.428,6),};Send:（-762.873,6）,Receive:（-423.029,10）;Sinr:16.042,PL:123.613
+Pattern Id:0;Infer_Set:{64(-588.756,-6),PL:110.107,94(-204.084,-2),PL:131.276,112(-1583.07,2),PL:137.688,200(1555.28,10),PL:155.31,};Send:（-743.428,6）,Receive:（-403.585,10）Sinr:3.77432,3.60734,-9.96738,-9.96751,PL:119.847
+干扰
+TTI[11853] - link[112, 107] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{107(-1269.22,-2),};Send:（-1277,-2）,Receive:（-1590.85,2）;Sinr:19.0975,PL:120.251
+Pattern Id:0;Infer_Set:{64(-588.756,-6),PL:133.954,94(-204.084,-2),PL:145.071,200(1555.28,10),PL:153.325,};Send:（-1269.22,-2）,Receive:（-1583.07,2）Sinr:-14.2822,-14.2856,-14.2856,15.7823,PL:116.843
+干扰
+TTI[11854] - link[64 , 176] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{176(-201.618,6),};Send:（-248.285,6）,Receive:（-635.423,-6）;Sinr:16.5769,PL:123.079
+Pattern Id:0;Infer_Set:{94(-204.084,-2),PL:65.9691,200(1555.28,10),PL:145.379,};Send:（-201.618,6）,Receive:（-588.756,-6）Sinr:-57.5427,-57.5427,-57.5425,-57.5425,PL:123.512
+干扰
+TTI[11913] - link[91 , 12 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{12(703.835,-10),};Send:（680.502,-10）,Receive:（243.712,-2）;Sinr:10.9087,PL:128.747
+Pattern Id:0;Infer_Set:{34(-1253.18,-10),PL:150.96,35(-1262.91,-10),PL:152.613,47(991.625,-6),PL:121.954,170(723.973,6),PL:78.4284,};Send:（703.835,-10）,Receive:（267.046,-2）Sinr:2.96231,-49.0042,-49.0042,-49.0044,PL:127.433
+干扰
+TTI[11914] - link[34 , 159] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{159(-1263.45,2),};Send:（-1286.79,2）,Receive:（-1276.51,-10）;Sinr:78.5767,PL:61.0788
+Pattern Id:0;Infer_Set:{35(-1262.91,-10),PL:64.3049,47(991.625,-6),PL:160.173,170(723.973,6),PL:149.665,};Send:（-1263.45,2）,Receive:（-1253.18,-10）Sinr:70.2696,70.2696,-3.84083,-3.84083,PL:68.1458
+干扰
+TTI[11916] - link[35 , 185] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{185(-910.024,6),};Send:（-933.357,6）,Receive:（-1286.25,-10）;Sinr:21.9969,PL:117.178
+Pattern Id:0;Infer_Set:{47(991.625,-6),PL:150.465,};Send:（-910.024,6）,Receive:（-1262.91,-10）Sinr:-1.36825,-1.26984,16.5771,16.5771,PL:122.732
+干扰
+TTI[11960] - link[196, 189] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{189(-1064.72,6),};Send:（-1064.72,6）,Receive:（-1556.56,10）;Sinr:6.50098,PL:128.896
+Pattern Id:0;Infer_Set:{41(-1488.81,-6),PL:122.87,};Send:（-1064.72,6）,Receive:（-1556.56,10）Sinr:-19.0946,-19.0946,-6.11594,-6.11594,PL:128.896
+干扰
+TTI[11962] - link[41 , 75 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{75(-1337.54,-2),};Send:（-1345.32,-2）,Receive:（-1496.59,-6）;Sinr:30.605,PL:109.051
+Pattern Id:0;Infer_Set:{};Send:（-1337.54,-2）,Receive:（-1488.81,-6）Sinr:1.31203,1.31203,32.34,32.34,PL:107.315
+干扰
+TTI[12005] - link[94 , 60 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{60(-157.095,-6),};Send:（-168.762,-6）,Receive:（-207.973,-2）;Sinr:57.1712,PL:82.4843
+Pattern Id:0;Infer_Set:{176(-193.841,6),PL:84.3497,};Send:（-157.095,-6）,Receive:（-196.306,-2）Sinr:-1.72611,-1.72604,-1.72604,-1.72604,PL:86.0757
+干扰
+TTI[12026] - link[215, 132] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{132(537.623,2),};Send:（533.734,2）,Receive:（183.261,10）;Sinr:6.44059,PL:128.625
+Pattern Id:0;Infer_Set:{62(-432.486,-6),PL:139.273,96(-329.825,-2),PL:132.73,};Send:（537.623,2）,Receive:（187.149,10）Sinr:-7.31126,-7.37071,-7.37071,-7.37071,PL:120.565
+干扰
+TTI[12065] - link[173, 53 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{53(501.142,-6),};Send:（489.475,-6）,Receive:（393.415,6）;Sinr:44.4373,PL:95.2181
+Pattern Id:0;Infer_Set:{};Send:（501.142,-6）,Receive:（405.082,6）Sinr:-2.25031,40.5008,40.5008,40.5008,PL:99.1546
+干扰
+TTI[12197] - link[37 , 189] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{189(-1056.94,6),};Send:（-1064.72,6）,Receive:（-1265.33,-10）;Sinr:19.7034,PL:112.553
+Pattern Id:0;Infer_Set:{78(-1580.55,-2),PL:129.637,114(1617.84,2),PL:156.143,138(135.617,2),PL:145.738,158(-1206.82,2),PL:104.65,};Send:（-1056.94,6）,Receive:（-1257.56,-10）Sinr:-0.949983,-0.949983,-0.949983,-0.963728,PL:105.598
+干扰
+TTI[12307] - link[188, 65 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{65(-612.714,-6),};Send:（-616.603,-6）,Receive:（-1048.14,6）;Sinr:15.3687,PL:124.287
+Pattern Id:0;Infer_Set:{200(1574.73,10),PL:154.328,};Send:（-612.714,-6）,Receive:（-1044.25,6）Sinr:-2.61964,-2.61964,15.2153,15.2153,PL:119.909
+干扰
+TTI[12438] - link[188, 160] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{160(-1245.89,2),};Send:（-1288.67,2）,Receive:（-1083.14,6）;Sinr:28.5894,PL:111.066
+Pattern Id:0;Infer_Set:{161(-1358.52,6),PL:101.853,};Send:（-1245.89,2）,Receive:（-1040.36,6）Sinr:21.6756,21.6756,-9.33157,-9.33157,PL:111.181
+干扰
+TTI[12485] - link[77 , 104] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{104(-1004.05,-2),};Send:（-1023.49,-2）,Receive:（-1474.25,-2）;Sinr:15.0976,PL:124.558
+Pattern Id:0;Infer_Set:{103(-933.307,-2),PL:89.4777,};Send:（-1004.05,-2）,Receive:（-1454.81,-2）Sinr:3.86818,3.86818,-37.9206,-37.9206,PL:127.398
+干扰
+TTI[12536] - link[176, 152] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{152(-624.83,2),};Send:（-679.275,2）,Receive:（-228.841,6）;Sinr:12.9375,PL:126.718
+Pattern Id:0;Infer_Set:{};Send:（-624.83,2）,Receive:（-174.396,6）Sinr:-11.6366,15.5339,15.5339,15.5339,PL:124.122
+车辆卷绕，已运动出范围
+
+TTI[12547] - link[98 , 103] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{103(-929.418,-2),};Send:（-960.53,-2）,Receive:（-651.359,-2）;Sinr:12.999,PL:126.656
+Pattern Id:0;Infer_Set:{102(-853.471,-2),PL:91.6741,};Send:（-929.418,-2）,Receive:（-620.247,-2）Sinr:17.9092,-29.6428,-29.6428,-29.6428,PL:121.317
+干扰
+TTI[12601] - link[191, 69 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{69(-999.181,-6),};Send:（-1006.96,-6）,Receive:（-1138.16,6）;Sinr:37.2971,PL:102.358
+Pattern Id:0;Infer_Set:{144(-238.245,2),PL:139.231,};Send:（-999.181,-6）,Receive:（-1130.39,6）Sinr:-40.839,-40.839,-41.2356,-41.2356,PL:106.743
+干扰
+TTI[12614] - link[19 , 128] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{128(750.382,2),};Send:（734.827,2）,Receive:（418.079,-10）;Sinr:17.975,PL:121.681
+Pattern Id:0;Infer_Set:{166(1080.16,6),PL:118.91,};Send:（750.382,2）,Receive:（433.634,-10）Sinr:1.34934,1.34934,1.34934,1.34934,PL:117.524
+干扰
+TTI[12631] - link[219, 215] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{215(210.483,10),};Send:（198.816,10）,Receive:（-91.2554,10）;Sinr:18.6316,PL:121.024
+Pattern Id:0;Infer_Set:{173(428.415,6),PL:112.752,};Send:（210.483,10）,Receive:（-79.5888,10）Sinr:20.3436,-6.56853,-6.56853,-6.56853,PL:119.312
+干扰
+TTI[12805] - link[198, 191] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{191(-1122.61,6),};Send:（-1145.94,6）,Receive:（-1595.73,10）;Sinr:18.7552,PL:120.9
+Pattern Id:0;Infer_Set:{};Send:（-1122.61,6）,Receive:（-1572.39,10）Sinr:-3.7154,-3.7154,-3.7154,9.51314,PL:130.065
+干扰
+TTI[12928] - link[90 , 59 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{59(-26.1922,-6),};Send:（-68.9699,-6）,Receive:（312.382,-2）;Sinr:18.038,PL:121.617
+Pattern Id:0;Infer_Set:{};Send:（-26.1922,-6）,Receive:（355.16,-2）Sinr:-18.3698,-18.3698,-18.3698,14.8321,PL:124.823
+干扰
+TTI[12968] - link[142, 138] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{138(166.728,2),};Send:（143.395,2）,Receive:（-210.581,2）;Sinr:6.45254,PL:124.982
+Pattern Id:0;Infer_Set:{};Send:（166.728,2）,Receive:（-187.248,2）Sinr:-1.89242,-1.89242,18.7464,18.7464,PL:120.909
+干扰
+TTI[13136] - link[212, 55 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{55(338.741,-6),};Send:（299.852,-6）,Receive:（450.924,10）;Sinr:35.1408,PL:104.515
+Pattern Id:0;Infer_Set:{};Send:（338.741,-6）,Receive:（489.813,10）Sinr:-29.5323,-29.5323,-29.5323,30.6654,PL:108.99
+干扰
+TTI[13155] - link[170, 210] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{210(647.56,10),224(-842.436,10),};Send:（628.115,10）,Receive:（751.195,6）;Sinr:38.1884,PL:101.232
+Pattern Id:0;Infer_Set:{};Send:（647.56,10）,Receive:（770.639,6）Sinr:-12.5711,-12.5711,-12.5711,34.559,PL:105.096
+干扰
+TTI[13181] - link[206, 88 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{88(829.667,-2),};Send:（814.112,-2）,Receive:（1217.75,10）;Sinr:17.2856,PL:122.37
+Pattern Id:0;Infer_Set:{171(564.279,6),PL:118.587,};Send:（829.667,-2）,Receive:（1233.31,10）Sinr:9.85857,-7.68252,-7.63916,-7.63916,PL:126.192
+干扰
+TTI[13196] - link[66 , 27 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{27(-185.913,-10),};Send:（-213.135,-10）,Receive:（-649.062,-6）;Sinr:16.6349,PL:123.021
+Pattern Id:0;Infer_Set:{65(-581.603,-6),PL:128.087,221(-353.029,10),PL:108.089,};Send:（-185.913,-10）,Receive:（-621.84,-6）Sinr:-0.278073,1.99311,-14.8564,-14.8564,PL:122.899
+干扰
+TTI[13198] - link[65 , 102] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{102(-830.138,-2),};Send:（-834.027,-2）,Receive:（-585.492,-6）;Sinr:23.2924,PL:116.363
+Pattern Id:0;Infer_Set:{75(-1290.88,-2),PL:128.338,115(1643.78,2),PL:159.488,221(-353.029,10),PL:124.992,};Send:（-830.138,-2）,Receive:（-581.603,-6）Sinr:-0.23324,-0.23324,13.2587,11.6529,PL:111.586
+干扰
+TTI[13339] - link[23 , 220] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{220(-122.987,10),};Send:（-157.987,10）,Receive:（207.363,-10）;Sinr:17.9829,PL:120.171
+Pattern Id:0;Infer_Set:{142(-171.693,2),PL:87.8588,226(-1081.29,10),PL:138.902,};Send:（-122.987,10）,Receive:（242.363,-10）Sinr:-35.3906,-35.3906,-35.3906,-35.3906,PL:123.249
+干扰
+TTI[13389] - link[96 , 64 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{64(-530.423,-6),};Send:（-545.978,-6）,Receive:（-294.825,-2）;Sinr:11.2243,PL:115.434
+Pattern Id:0;Infer_Set:{99(-625.346,-2),PL:103.806,};Send:（-530.423,-6）,Receive:（-279.27,-2）Sinr:18.3811,-11.2851,-11.2851,-11.2815,PL:115.086
+干扰
+TTI[13443] - link[190, 75 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{75(-1279.21,-2),};Send:（-1325.88,-2）,Receive:（-1084.11,6）;Sinr:21.9121,PL:117.743
+Pattern Id:0;Infer_Set:{72(-1078.3,-6),PL:112.867,};Send:（-1279.21,-2）,Receive:（-1037.44,6）Sinr:-2.27852,-2.27852,-4.57913,-0.729146,PL:113.587
+干扰
+TTI[13445] - link[72 , 1  ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{1(-1497.21,-10),};Send:（-1536.1,-10）,Receive:（-1117.19,-6）;Sinr:12.3922,PL:127.263
+Pattern Id:0;Infer_Set:{110(-1374.51,2),PL:106.663,};Send:（-1497.21,-10）,Receive:（-1078.3,-6）Sinr:-4.96213,-3.52238,9.85482,-23.1394,PL:129.801
+干扰
+TTI[13569] - link[90 , 169] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{169(842.611,6),};Send:（819.278,6）,Receive:（355.16,-2）;Sinr:10.9792,PL:128.676
+Pattern Id:0;Infer_Set:{};Send:（842.611,6）,Receive:（378.493,-2）Sinr:1.2364,1.2364,1.2364,1.2364,PL:129.214
+干扰
+TTI[13657] - link[156, 39 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{39(-1265.37,-6),};Send:（-1296.48,-6）,Receive:（-1107.85,2）;Sinr:32.3579,PL:107.298
+Pattern Id:0;Infer_Set:{};Send:（-1265.37,-6）,Receive:（-1076.74,2）Sinr:-16.1582,-16.1582,-16.1581,-16.1581,PL:106.885
+干扰
+TTI[13680] - link[187, 110] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{110(-1366.73,2),};Send:（-1393.95,2）,Receive:（-990.634,6）;Sinr:16.3055,PL:123.35
+Pattern Id:0;Infer_Set:{};Send:（-1366.73,2）,Receive:（-963.412,6）Sinr:1.86266,1.86266,18.0332,18.0332,PL:121.622
+干扰
+TTI[13768] - link[31 , 65 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{65(-558.27,-6),};Send:（-593.27,-6）,Receive:（-981.519,-10）;Sinr:14.3228,PL:125.333
+Pattern Id:0;Infer_Set:{73(-1195.33,-6),PL:133.102,151(-577.443,2),PL:68.7074,};Send:（-558.27,-6）,Receive:（-946.519,-10）Sinr:2.00037,-53.9472,-53.9472,-53.9472,PL:122.655
+干扰
+TTI[13793] - link[215, 173] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{173(471.193,6),};Send:（459.526,6）,Receive:（241.594,10）;Sinr:14.4998,PL:118.82
+Pattern Id:0;Infer_Set:{19(476.412,-10),PL:69.2849,160(-1195.33,2),PL:147.379,};Send:（471.193,6）,Receive:（253.261,10）Sinr:-23.8634,-23.8634,-49.8772,-49.8772,PL:119.152
+干扰
+TTI[13795] - link[19 , 16 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{16(567.793,-10),};Send:（548.348,-10）,Receive:（456.967,-10）;Sinr:37.6807,PL:101.975
+Pattern Id:0;Infer_Set:{160(-1195.33,2),PL:147.302,};Send:（567.793,-10）,Receive:（476.412,-10）Sinr:-50.7256,-50.7256,39.9582,39.9582,PL:99.0083
+干扰
+TTI[13803] - link[122, 51 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{51(750,-6),};Send:（738.333,-6）,Receive:（1168.7,2）;Sinr:11.523,PL:128.132
+Pattern Id:0;Infer_Set:{124(1135.46,2),PL:122.47,143(-172.923,2),PL:136.114,};Send:（750,-6）,Receive:（1180.37,2）Sinr:-5.07894,-5.07894,-10.8213,-9.55396,PL:131.762
+干扰
+TTI[13829] - link[36 , 186] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{186(-936.615,6),};Send:（-944.393,6）,Receive:（-1198.3,-10）;Sinr:23.4203,PL:116.235
+Pattern Id:0;Infer_Set:{39(-1257.59,-6),PL:117.017,};Send:（-936.615,6）,Receive:（-1190.52,-10）Sinr:22.3991,-0.116922,-0.116112,-0.116112,PL:117.109
+干扰
+TTI[13951] - link[159, 102] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{102(-799.027,-2),};Send:（-802.916,-2）,Receive:（-1189.57,2）;Sinr:17.7423,PL:121.913
+Pattern Id:0;Infer_Set:{72(-1058.85,-6),PL:115.579,192(-1187.56,6),PL:121.989,};Send:（-799.027,-2）,Receive:（-1185.68,2）Sinr:-15.2821,-15.6483,-15.6483,-5.63393,PL:120.306
+干扰
+TTI[14013] - link[191, 199] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{199(-1549.83,10),};Send:（-1577.05,10）,Receive:（-1103.16,6）;Sinr:8.38275,PL:131.273
+Pattern Id:0;Infer_Set:{77(-1392.59,-2),PL:109.546,};Send:（-1549.83,10）,Receive:（-1075.94,6）Sinr:18.8334,18.8334,19.0346,-11.0789,PL:120.621
+干扰
+TTI[14018] - link[149, 181] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{181(-657.873,6),};Send:（-688.984,6）,Receive:（-415.568,2）;Sinr:26.7148,PL:112.941
+Pattern Id:0;Infer_Set:{98(-561.914,-2),PL:99.3675,211(561.714,10),PL:145.004,};Send:（-657.873,6）,Receive:（-384.457,2）Sinr:4.4115,4.4115,5.29095,-24.9687,PL:124.332
+干扰
+TTI[14050] - link[21 , 176] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{176(-116.063,6),};Send:（-143.285,6）,Receive:（336.457,-10）;Sinr:13.634,PL:123.482
+Pattern Id:0;Infer_Set:{223(-563.339,10),PL:125.145,};Send:（-116.063,6）,Receive:（363.679,-10）Sinr:-42.8181,-42.8181,12.3778,-2.28417,PL:127.278
+干扰
+TTI[14108] - link[118, 119] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{119(1428.34,2),};Send:（1408.9,2）,Receive:（1578.58,2）;Sinr:29.6916,PL:109.964
+Pattern Id:0;Infer_Set:{183(-726.048,6),PL:156.88,};Send:（1428.34,2）,Receive:（1598.02,2）Sinr:-12.6486,-12.6486,-12.6486,-12.6486,PL:109.091
+干扰
+TTI[14210] - link[226, 162] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{162(-1371.98,6),};Send:（-1399.2,6）,Receive:（-1073.51,10）;Sinr:19.3457,PL:120.31
+Pattern Id:0;Infer_Set:{};Send:（-1371.98,6）,Receive:（-1046.29,10）Sinr:-12.6799,-12.6798,-12.6798,-12.6763,PL:118.99
+干扰
+TTI[14337] - link[34 , 182] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{182(-689.058,6),};Send:（-704.614,6）,Receive:（-1175.4,-10）;Sinr:16.8219,PL:122.834
+Pattern Id:0;Infer_Set:{63(-381.389,-6),PL:122.39,};Send:（-689.058,6）,Receive:（-1159.85,-10）Sinr:7.85409,-5.15381,-5.15381,-5.01168,PL:127.321
+干扰
+TTI[14360] - link[220, 175] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{175(106.843,6),};Send:（79.6208,6）,Receive:（-111.32,10）;Sinr:28.5702,PL:111.085
+Pattern Id:0;Infer_Set:{187(-936.19,6),PL:140.505,};Send:（106.843,6）,Receive:（-84.0978,10）Sinr:-12.7679,-12.7685,-12.7685,22.276,PL:114.773
+干扰
+TTI[14361] - link[187, 64 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{64(-491.534,-6),};Send:（-526.534,-6）,Receive:（-971.19,6）;Sinr:14.3833,PL:125.272
+Pattern Id:0;Infer_Set:{73(-1172,-6),PL:135.201,103(-859.418,-2),PL:118.279,};Send:（-491.534,-6）,Receive:（-936.19,6）Sinr:-1.58295,-1.58295,-1.07134,-5.18314,PL:123.343
+干扰
+TTI[14364] - link[103, 71 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{71(-974.963,-6),};Send:（-978.851,-6）,Receive:（-863.307,-2）;Sinr:41.7075,PL:97.948
+Pattern Id:0;Infer_Set:{92(25.223,-2),PL:141.205,};Send:（-974.963,-6）,Receive:（-859.418,-2）Sinr:-13.4552,18.7473,18.7473,18.7473,PL:98.8951
+干扰
+TTI[14427] - link[55 , 19 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{19(503.634,-10),};Send:（476.412,-10）,Receive:（362.074,-6）;Sinr:42.4684,PL:97.1871
+Pattern Id:0;Infer_Set:{136(267.844,2),PL:120.086,};Send:（503.634,-10）,Receive:（389.297,-6）Sinr:-45.9653,-45.9653,17.7394,17.7394,PL:102.299
+干扰
+TTI[14489] - link[36 , 70 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{70(-943.581,-6),};Send:（-990.248,-6）,Receive:（-1213.86,-10）;Sinr:21.2961,PL:118.359
+Pattern Id:0;Infer_Set:{190(-998.553,6),PL:90.0227,};Send:（-943.581,-6）,Receive:（-1167.19,-10）Sinr:21.0199,21.1337,21.1337,-28.4991,PL:118.522
+干扰
+TTI[14493] - link[2  , 191] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{191(-1060.39,6),};Send:（-1079.83,6）,Receive:（-1480.21,-10）;Sinr:20.5379,PL:119.118
+Pattern Id:0;Infer_Set:{};Send:（-1060.39,6）,Receive:（-1460.77,-10）Sinr:-33.8382,-33.8382,-33.8382,17.5239,PL:122.132
+干扰
+TTI[14503] - link[99 , 27 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{27(-131.469,-10),};Send:（-139.247,-10）,Receive:（-586.458,-2）;Sinr:13.5281,PL:126.127
+Pattern Id:0;Infer_Set:{165(1316.38,6),PL:147.601,215(284.372,10),PL:124.232,};Send:（-131.469,-10）,Receive:（-578.68,-2）Sinr:-19.6359,-19.6703,-19.6703,-19.6703,PL:122.872
+干扰
+TTI[14608] - link[190, 224] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{224(-784.103,10),};Send:（-807.436,10）,Receive:（-1014.11,6）;Sinr:26.2388,PL:113.366
+Pattern Id:0;Infer_Set:{148(-355.127,2),PL:126.736,};Send:（-784.103,10）,Receive:（-990.775,6）Sinr:1.97535,1.97535,1.97535,0.890457,PL:119.29
+干扰
+TTI[14611] - link[148, 154] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{154(-737.952,2),};Send:（-749.618,2）,Receive:（-366.794,2）;Sinr:16.3572,PL:123.298
+Pattern Id:0;Infer_Set:{47(1096.63,-6),PL:155.11,};Send:（-737.952,2）,Receive:（-355.127,2）Sinr:0.376765,21.0703,20.9484,20.9484,PL:118.585
+干扰
+TTI[14741] - link[195, 108] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{108(-1245.24,2),};Send:（-1280.24,2）,Receive:（-1376.75,10）;Sinr:43.8733,PL:95.7822
+Pattern Id:0;Infer_Set:{34(-1144.29,-10),PL:102.441,};Send:（-1245.24,2）,Receive:（-1341.75,10）Sinr:38.2451,1.03006,1.03006,1.03006,PL:101.41
+干扰
+TTI[14750] - link[92 , 18 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{18(515.622,-10),};Send:（503.955,-10）,Receive:（29.1118,-2）;Sinr:11.942,PL:127.714
+Pattern Id:0;Infer_Set:{44(1384.73,-6),PL:136.937,126(1002.64,2),PL:123.828,};Send:（515.622,-10）,Receive:（40.7785,-2）Sinr:1.01515,1.03949,1.03949,-4.72613,PL:127.009
+干扰
+TTI[14849] - link[79 , 194] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{194(-1280.56,10),};Send:（-1284.45,10）,Receive:（-1492.9,-2）;Sinr:26.4081,PL:113.247
+Pattern Id:0;Infer_Set:{193(-1236.87,10),PL:85.4744,};Send:（-1280.56,10）,Receive:（-1489.01,-2）Sinr:-8.73977,26.0933,-27.9382,-27.9382,PL:113.413
+干扰
+TTI[14890] - link[30 , 96 ] - {FAILED}{LOW_SINR}
+Pattern Id:3;Infer_Set:{96(-220.937,-2),};Send:（-220.937,-2）,Receive:（-470.165,-10）;Sinr:25.3427,PL:114.313
+Pattern Id:0;Infer_Set:{25(6.95603,-10),PL:111.764,76(-1350.82,-2),PL:142.729,184(-733.978,6),PL:127.856,};Send:（-220.937,-2）,Receive:（-470.165,-10）Sinr:25.3427,-2.66123,-2.66462,-2.66462,PL:114.313
+干扰

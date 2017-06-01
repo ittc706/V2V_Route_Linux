@@ -1,2 +1,2 @@
-total success event: 60
+total success event: 676
 
